@@ -73,7 +73,7 @@ const Main = (props: Props) => {
                         className="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
                     >
                         <h2 className="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                            Hi! I'm <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Alston</span> Soares
+                            Hi! I&apos;m <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Alston</span> Soares
                             <br />Full Stack
                             <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400"> Developer</span>
                         </h2>
