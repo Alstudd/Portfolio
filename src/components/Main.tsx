@@ -169,65 +169,65 @@ const Main = (props: Props) => {
                     <div
                         className="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full"
                     >
-                        <table className="bg-white text-slate-700 rounded">
-                            <thead className="border-b border-solid border-slate-200">
-                                <tr className="text-left">
-                                    <th>Hi</th>
-                                    <th className="">Candidate #1</th>
-                                    <th className="">Candidate #2</th>
-                                    <th className="">Candidate #3</th>
+                        <table className="bg-white text-slate-700 rounded ml-auto mr-auto w-full">
+                            {/* <thead className=""> */}
+                                <tr className="">
+                                    <th className="text-left p-4">Criteria</th>
+                                    <th className="text-left p-4">Candidate #1</th>
+                                    <th className="text-left p-4">Candidate #2</th>
+                                    <th className="text-left p-4">Candidate #3</th>
                                     <th
-                                        className="bg-blue-700 text-white"
+                                        className="bg-blue-700 text-white text-left p-4"
                                     >Me</th>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                <tr className="border-b border-solid border-slate-200">
+                            {/* </thead> */}
+                            {/* <tbody> */}
+                                <tr className="">
                                     <td
-                                        className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+                                        className="font-semibold text-sm text-left p-4"
                                     >Dedication</td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-blue-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
                                 </tr>
-                                <tr className="border-b border-solid border-slate-200">
+                                <tr className="">
                                     <td
-                                        className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+                                        className="font-semibold text-sm text-left p-4"
                                     >Reliability</td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-blue-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
                                 </tr>
                                 <tr>
                                     <td
-                                        className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+                                        className="font-semibold text-sm text-left p-4"
                                     >Communication Skills</td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-blue-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
                                 </tr>
-                                <tr className="border-t border-solid border-slate-200">
+                                <tr className="">
                                     <td
-                                        className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+                                        className="font-semibold text-sm text-left p-4"
                                     >Confidence</td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-blue-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
                                 </tr>
-                                <tr className="border-t border-solid border-slate-200">
+                                <tr className="">
                                     <td
-                                        className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
+                                        className="font-semibold text-sm text-left p-4"
                                     >Progamming Ability</td>
-                                    <td><FaCheck className="text-slate-500" /></td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaTimes className="text-slate-500" /></td>
-                                    <td><FaCheck className="text-blue-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
                                 </tr>
-                            </tbody>
+                            {/* </tbody> */}
                         </table>
                     </div>
                     <div className="mx-auto -mt-12 italic sm:hidden opacity-50">
