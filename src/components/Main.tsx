@@ -63,7 +63,7 @@ const Main = (props: Props) => {
         },
     ];
     return (
-        <div>
+        <div className='mt-20'>
             <main className="relative z-[20] flex flex-col flex-1 p-4">
                 <section
                     id="introPage"
