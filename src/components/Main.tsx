@@ -1,5 +1,6 @@
 import React from 'react'
 import Step from './Step';
+import { FaEthereum, FaRobot, FaNotesMedical, FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 
 type Props = {}
 
@@ -9,7 +10,7 @@ const Main = (props: Props) => {
             name: "Questify AI",
             href: "https://github.com/Alstudd/Questify-AI",
             live: "https://questify-ai.vercel.app/",
-            icon: "fa-solid fa-laptop",
+            icon: <FaRobot />,
             head: "Questify AI is an",
             type: "AI-integrated web app created with",
             techStack: "Next.js, TypeScript, Prisma, MongoDB and OpenAI LLM.",
@@ -21,7 +22,7 @@ const Main = (props: Props) => {
             name: "EtherShare",
             href: "https://github.com/Alstudd/EtherShare",
             live: "https://ethershare.vercel.app/",
-            icon: "fa-brands fa-ethereum",
+            icon: <FaEthereum />,
             head: "EtherShare is a",
             type: "React.js, Web 3.0 & ETH (crypto) sharing platform created using",
             techStack: "React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS.",
@@ -33,7 +34,7 @@ const Main = (props: Props) => {
             name: "Swasth",
             href: "https://github.com/Alstudd/Health-Web-App-KnowCode",
             live: "https://swasth-flask.onrender.com/",
-            icon: "fa-solid fa-notes-medical",
+            icon: <FaNotesMedical />,
             head: "Swasth is a",
             type: "web application hosted on Render made with",
             techStack: "Flask.",
@@ -72,13 +73,13 @@ const Main = (props: Props) => {
                         className="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
                     >
                         <h2 className="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                            Hi! I'm <span className="poppins text-violet-400">Alston</span> Soares
+                            Hi! I'm <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Alston</span> Soares
                             <br />Full Stack
-                            <span className="poppins text-violet-400">Developer</span>
+                            <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400"> Developer</span>
                         </h2>
                         <p className="text-base sm:text-lg md:text-xl">
-                            I am a Passionate <span className="text-violet-400">Web</span> Developer, <span className="text-violet-400">Open Source</span> Contributor and <span className="text-violet-400">AI/ML + Blockchain</span> Enthusiast.
-                            My <span className="text-violet-400"> favorite tech</span> includes MERN, Next.js, Prisma, Tailwind CSS, Flask and Python.
+                            I am a Passionate <span className="text-blue-400 text-extrabold"><strong>Web</strong></span> Developer, <span className="text-blue-400 text-extrabold"><strong>Open Source</strong></span> Contributor and <span className="text-blue-400 text-extrabold"><strong>AI/ML + Blockchain</strong></span> Enthusiast.
+                            My <span className="text-blue-400 text-extrabold"><strong> favorite tech</strong></span> includes MERN, Next.js, Prisma, Tailwind CSS, Flask and Python.
                         </p>
                         <a
                             href="https://www.github.com/Alstudd"
@@ -86,9 +87,9 @@ const Main = (props: Props) => {
                             className="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
                         >
                             <div
-                                className="absolute top-0 right-full w-full h-full bg-violet-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
+                                className="absolute top-0 right-full w-full h-full bg-blue-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
                             />
-                            <h4 className="relative z-9">Get in touch &rarr;</h4>
+                            <h4 className="relative z-9">Contact Me &rarr;</h4>
                         </a>
                     </div>
                     <div className="relative shadow-2xl grid place-items-center">
@@ -102,18 +103,18 @@ const Main = (props: Props) => {
                 <section className="py-20 lg:py-32 flex flex-col gap-24" id="projects">
                     <div className="flex flex-col gap-2 text-center">
                         <h6 className="text-large sm:text-xl md:text-2xl">
-                            A few of my creative endeavors.
+                            Some of my amazing projects.
                         </h6>
                         <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
-                            Curious to <span className="poppins text-violet-400">see</span> my work?
+                            Excited to <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">view</span> my work?
                         </h3>
                     </div>
                     <a
                         href="https://www.github.com/Alstudd"
                         target="_blank"
-                        className="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-violet-700 duration-200"
+                        className="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-blue-700 duration-200"
                     >
-                        <i className="fa-brands fa-github" />
+                        <FaGithub />
                         <p>View my github</p>
                     </a>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
@@ -127,13 +128,13 @@ const Main = (props: Props) => {
                     className="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
                 >
                     <div
-                        className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-violet-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-violet-700 py-4"
+                        className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 py-4"
                     >
                         <h6 className="text-large sm:text-xl md:text-2xl">
                             Want to know more?
                         </h6>
                         <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
-                            A bit <span className="poppins text-violet-400">about</span> me.
+                            A bit <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">about</span> me.
                         </h3>
                     </div>
                     <p className="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
@@ -157,21 +158,26 @@ const Main = (props: Props) => {
                         ))
                         }
                     </div>
-                    <h5 className={" text-2xl sm:text-3xl font-semibold text-center poppins "}>
-                        The <span className="text-violet-400">Complete</span> Package
-                    </h5>
+                    <div className="flex flex-col gap-2 text-center">
+                        {/* <h6 className="text-large sm:text-xl md:text-2xl">
+                            Qualities that make me stand out.
+                        </h6> */}
+                        <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                            The <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Complete</span> Package
+                        </h3>
+                    </div>
                     <div
                         className="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full"
                     >
-                        <table className="bg-white text-slate-700 rounded text-center">
-                            <thead className={"border-b border-solid border-slate-200  "}>
-                                <tr className="">
-                                    <th />
-                                    <th className="whitespace-nowrap p-2 px-4">Candidate #1</th>
-                                    <th className="whitespace-nowrap p-2 px-4">Candidate #2</th>
-                                    <th className="whitespace-nowrap p-2 px-4">Candidate #3</th>
+                        <table className="bg-white text-slate-700 rounded">
+                            <thead className="border-b border-solid border-slate-200">
+                                <tr className="text-left">
+                                    <th>Hi</th>
+                                    <th className="">Candidate #1</th>
+                                    <th className="">Candidate #2</th>
+                                    <th className="">Candidate #3</th>
                                     <th
-                                        className="bg-violet-700 text-white whitespace-nowrap p-4 px-8"
+                                        className="bg-blue-700 text-white"
                                     >Me</th>
                                 </tr>
                             </thead>
@@ -180,46 +186,46 @@ const Main = (props: Props) => {
                                     <td
                                         className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
                                     >Dedication</td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-green-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-blue-500" /></td>
                                 </tr>
                                 <tr className="border-b border-solid border-slate-200">
                                     <td
                                         className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
                                     >Reliability</td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-green-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-blue-500" /></td>
                                 </tr>
                                 <tr>
                                     <td
                                         className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
                                     >Communication Skills</td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-green-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-blue-500" /></td>
                                 </tr>
                                 <tr className="border-t border-solid border-slate-200">
                                     <td
                                         className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
                                     >Confidence</td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-green-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-blue-500" /></td>
                                 </tr>
                                 <tr className="border-t border-solid border-slate-200">
                                     <td
                                         className="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
                                     >Progamming Ability</td>
-                                    <td><i className="fa-solid fa-check text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-xmark text-slate-500" /></td>
-                                    <td><i className="fa-solid fa-check text-green-500" /></td>
+                                    <td><FaCheck className="text-slate-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaTimes className="text-slate-500" /></td>
+                                    <td><FaCheck className="text-blue-500" /></td>
                                 </tr>
                             </tbody>
                         </table>
