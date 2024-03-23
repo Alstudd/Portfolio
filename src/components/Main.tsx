@@ -41,7 +41,7 @@ const Main = (props: Props) => {
             name: "EtherShare",
             href: "https://github.com/Alstudd/EtherShare",
             live: "https://ethershare.vercel.app/",
-            mainImg: "/questify.png",
+            mainImg: "/ethershare.png",
             icon: <FaEthereum />,
             head: "EtherShare is a",
             type: "React.js, Web 3.0 & ETH (crypto) sharing platform created using",
@@ -53,7 +53,7 @@ const Main = (props: Props) => {
         {
             name: "Swasth",
             href: "https://github.com/Alstudd/Health-Web-App-KnowCode",
-            live: "https://swasth-flask.onrender.com/",
+            // live: "https://swasth-flask.onrender.com/",
             mainImg: "/questify.png",
             icon: <FaNotesMedical />,
             head: "Swasth is a",
