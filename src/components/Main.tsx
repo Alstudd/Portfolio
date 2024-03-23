@@ -1,7 +1,9 @@
+"use client";
 import React from 'react'
 import Step from './Step';
 import { FaEthereum, FaRobot, FaNotesMedical, FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 import Github from './Github';
+import Typewriter from 'typewriter-effect';
 
 type Props = {}
 
@@ -71,15 +73,32 @@ const Main = (props: Props) => {
                     className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
                 >
                     <div
-                        className="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
+                        className="flex flex-col lg:justify-center items-center lg:items-start text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
                     >
+                        <div className='Welcome-box py-[8px] px-[7px] border border-blue-400 opacity-[0.9]'>
+                            <h1 className="Welcome-text text-[16px] text-white font-semibold poppins flex gap-2">
+                                {"🚀 "} <Typewriter
+                                    options={{
+                                        strings: [
+                                            "Software Developer",
+                                            "MERN Stack Developer",
+                                            "Open Source Contributor",
+                                            "AI/ML & Blockchain Enthusiast",
+                                        ],
+                                        autoStart: true,
+                                        loop: true,
+                                        deleteSpeed: 50,
+                                    }}
+                                />
+                            </h1>
+                        </div>
                         <h2 className="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                            Hi! I&apos;m <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Alston</span> Soares
-                            <br />Full Stack
+                            <span className='xl:inline-block hidden'>Hi! I&apos;m </span><span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400"> Alston</span> Soares
+                            <br />FullStack
                             <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400"> Developer</span>
                         </h2>
                         <p className="text-base sm:text-lg md:text-xl">
-                            I am a Passionate <span className="text-blue-400 text-extrabold"><strong>Web</strong></span> Developer, <span className="text-blue-400 text-extrabold"><strong>Open Source</strong></span> Contributor and <span className="text-blue-400 text-extrabold"><strong>AI/ML + Blockchain</strong></span> Enthusiast.
+                            I am a Passionate <span className="text-blue-400 text-extrabold"><strong>Web</strong></span> Developer, <span className="text-blue-400 text-extrabold"><strong>Open Source</strong></span> Contributor and <span className="text-blue-400 text-extrabold"><strong>AI/ML, Blockchain</strong></span> Enthusiast.
                             My <span className="text-blue-400 text-extrabold"><strong> favorite tech</strong></span> includes MERN, Next.js, Prisma, Tailwind CSS, Flask and Python.
                         </p>
                         <a
@@ -245,7 +264,6 @@ const Main = (props: Props) => {
                     <div className="mx-auto -mt-12 italic sm:hidden opacity-50">
                         <p>Scroll to see more &rarr;</p>
                     </div>
-                    <p className="mx-auto">So why not invest?</p>
                 </section>
             </main>
         </div>

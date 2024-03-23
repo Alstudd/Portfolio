@@ -6,14 +6,14 @@ const Github = () => {
 
   const myTheme = {
     light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#384259'],
-    dark: ['#ffffff','#81d4fa', '#29b6f6', "#039be5", "#0277bd"],
+    dark: ['#ffffff', '#81d4fa', '#29b6f6', "#039be5", "#0277bd"],
   };
   const currentYear = new Date().getFullYear();
   const [year, setYear] = useState(currentYear);
   return (
     <div className="relative z-[20] flex flex-col items-center gap-10 justify-center">
       <GitHubCalendar
-      colorScheme="dark"
+        colorScheme="dark"
         theme={myTheme}
         year={year}
         style={{}}
