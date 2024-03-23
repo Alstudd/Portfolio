@@ -13,6 +13,7 @@
     "@react-three/fiber": "^8.15.19",
     "next": "14.1.4",
     "react": "^18",
+    "react-activity-calendar": "^2.2.8",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
     "react-github-calendar": "^4.1.3",
