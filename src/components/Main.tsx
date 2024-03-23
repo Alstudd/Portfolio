@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Step from './Step';
 import { FaEthereum, FaRobot, FaNotesMedical, FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 import Github from './Github';
@@ -8,6 +8,21 @@ import Typewriter from 'typewriter-effect';
 type Props = {}
 
 const Main = (props: Props) => {
+    const [expandedIndex, setExpandedIndex] = useState(-1);
+
+    const toggleExpand = (index: any) => {
+        setExpandedIndex(index === expandedIndex ? -1 : index);
+    };
+
+    const [dots, setDots] = useState('.');
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setDots(prevDots => prevDots.length > 3 ? '.' : prevDots + '.');
+        }, 1000);
+
+        return () => clearInterval(interval);
+    }, []);
     const steps = [
         {
             name: "Questify AI",
@@ -52,17 +67,17 @@ const Main = (props: Props) => {
             metric: "10x",
             name: "a self taught developer",
             description:
-                "I am a self-taught developer and I have been coding for over 2 years. I have a strong passion for learning and I am always looking for new ways to improve my skills and expand my knowledge. I started off with HTML, CSS and JavaScript and have since expanded my skills to include a variety of different languages and frameworks.",
+                "I have been coding for over 2 years. I have a strong passion for learning and I am always looking for new ways to improve my skills and expand my knowledge. I started off with HTML, CSS and JavaScript and have since expanded my skills to include a variety of different languages and frameworks.",
         },
         {
-            name: "a creative thinker",
+            name: "a curious learner",
             description:
-                "I am a creative thinker and I am always looking for new ways to solve problems and create new and innovative solutions. I am driven by a dream to build something new that can bring meaning and value to everyone's lives, and I am eager to collaborate with like-minded individuals to turn this dream into reality",
+                "I am always looking for new ways to solve problems and create new and innovative solutions. I am driven by a dream to build something new that can bring meaning and value to everyone's lives, and I am eager to collaborate with like-minded individuals to turn this dream into reality. I'm also interested in working on exciting projects and exploring new opportunities in the tech space.",
         },
         {
             name: "a team player",
             description:
-                "I have participated in 8+ national level hackathons and emerged as winner at 3 hackathons. I have a strong understanding of the software development lifecycle and I am able to manage and lead a team to deliver high-quality software solutions on time and within budget. I am also a strong communicator and I am able to work effectively with stakeholders at all levels of an organization. I am a strong believer in the power of teamwork and I am always looking for new ways to improve my leadership skills and help my team achieve their goals.",
+                "I have participated in 8+ national level hackathons and emerged as winner at 3 hackathons. I am able to manage and lead a team to deliver high-quality software solutions on time and within budget. I am a strong believer in the power of teamwork and I am always looking for new ways to improve my leadership skills and help my team achieve their goals.",
         },
     ];
     return (
@@ -166,7 +181,7 @@ const Main = (props: Props) => {
                 </section>
                 <section
                     id="about"
-                    className="py-8 sm:py-14 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
+                    className="py-8 sm:py-14 flex flex-col gap-16 relative"
                 >
                     <div
                         className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 py-4"
@@ -178,14 +193,14 @@ const Main = (props: Props) => {
                             A bit <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">about</span> me.
                         </h3>
                     </div>
-                    <p className="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">
-                        I am . . .
+                    <p className="w-full text-center py-2 mx-auto poppins font-semibold text-2xl sm:text-3xl md:text-4xl">
+                        I am <span className='poppins' id="wait">{dots}</span>
                     </p>
-                    <div className="flex flex-col gap-20 w-full mx-auto max-w-[800px]">
+                    <div className="flex flex-col gap-20 w-full mx-auto max-w-[800px] bg-gradient-to-r from-blue-600 to-cyan-400 p-10 rounded-xl shadow-2xl shadow-blue-600">
                         {benefits.map((benefit, index) => (
                             <div key={index} className="flex gap-6 sm:gap-8">
                                 <p
-                                    className="poppins text-4xl sm:text-5xl md:text-6xl text-slate-500 font-semibold"
+                                    className="poppins text-4xl sm:text-5xl md:text-6xl text-blue-50 font-semibold"
                                 >
                                     0{index + 1}
                                 </p>
@@ -193,13 +208,23 @@ const Main = (props: Props) => {
                                     <h3 className="text-2xl sm:text-3xl md:text-5xl">
                                         {benefit.name}
                                     </h3>
-                                    <p>{benefit.description}</p>
+                                    {/* Make the description short in mobile and add ... to view */}
+                                    <p className='sm:block hidden'>{benefit.description}</p>
+                                    <p className='sm:hidden block'>
+                                        {index === expandedIndex ? benefit.description : benefit.description.slice(0, 100) + '...'}
+                                        {index !== expandedIndex && (
+                                            <button className='' onClick={() => toggleExpand(index)}>View More</button>
+                                        )}
+                                        {index === expandedIndex && (
+                                            <button className='' onClick={() => toggleExpand(index)}>View Less</button>
+                                        )}
+                                    </p>
                                 </div>
                             </div>
                         ))
                         }
                     </div>
-                    <div className="flex flex-col gap-2 text-center">
+                    <div className="flex flex-col gap-2 text-center mt-20">
                         {/* <h6 className="text-large sm:text-xl md:text-2xl">
                             Qualities that make me stand out.
                         </h6> */}
@@ -207,69 +232,57 @@ const Main = (props: Props) => {
                             The <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Complete</span> Package
                         </h3>
                     </div>
-                    <div
-                        className="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full"
-                    >
-                        <table className="bg-white text-slate-700 rounded ml-auto mr-auto w-full">
-                            {/* <thead className=""> */}
-                            <tr className="">
-                                <th className="text-left p-4">Criteria</th>
-                                <th className="text-left p-4">Candidate #1</th>
-                                <th className="text-left p-4">Candidate #2</th>
-                                <th className="text-left p-4">Candidate #3</th>
-                                <th
-                                    className="bg-blue-700 text-white text-left p-4"
-                                >Me</th>
-                            </tr>
-                            {/* </thead> */}
-                            {/* <tbody> */}
-                            <tr className="">
-                                <td
-                                    className="font-semibold text-sm text-left p-4"
-                                >Dedication</td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                            </tr>
-                            <tr className="">
-                                <td
-                                    className="font-semibold text-sm text-left p-4"
-                                >Reliability</td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                            </tr>
-                            <tr>
-                                <td
-                                    className="font-semibold text-sm text-left p-4"
-                                >Communication Skills</td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                            </tr>
-                            <tr className="">
-                                <td
-                                    className="font-semibold text-sm text-left p-4"
-                                >Confidence</td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                            </tr>
-                            <tr className="">
-                                <td
-                                    className="font-semibold text-sm text-left p-4"
-                                >Progamming Ability</td>
-                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                            </tr>
-                            {/* </tbody> */}
-                        </table>
+                    <div className="flex flex-col gap-10 max-w-[800px] mx-auto w-full shadow-2xl shadow-blue-500 mb-20">
+                        <div className="overflow-x-auto">
+                            <table className="table-auto min-w-full bg-white rounded-4xl text-slate-500">
+                                <thead>
+                                    <tr className="bg-gray-100 border-b border-gray-200">
+                                        <th className="p-4 text-left">Criteria</th>
+                                        <th className="p-4 text-left">Candidate #1</th>
+                                        <th className="p-4 text-left">Candidate #2</th>
+                                        <th className="p-4 text-left">Candidate #3</th>
+                                        <th className="p-4 text-left bg-blue-700 text-white">Me</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-semibold">Dedication</td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-blue-500" /></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-semibold">Reliability</td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-blue-500" /></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-semibold">Communication Skills</td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-blue-500" /></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-semibold">Confidence</td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-blue-500" /></td>
+                                    </tr>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-semibold">Programming Ability</td>
+                                        <td className="p-4"><FaCheck className="text-slate-500" /></td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaTimes className="text-slate-500" /></td>
+                                        <td className="p-4"><FaCheck className="text-blue-500" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div className="mx-auto -mt-12 italic sm:hidden opacity-50">
                         <p>Scroll to see more &rarr;</p>
