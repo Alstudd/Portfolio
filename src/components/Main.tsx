@@ -1,6 +1,7 @@
 import React from 'react'
 import Step from './Step';
 import { FaEthereum, FaRobot, FaNotesMedical, FaGithub, FaCheck, FaTimes } from "react-icons/fa";
+import Github from './Github';
 
 type Props = {}
 
@@ -123,6 +124,17 @@ const Main = (props: Props) => {
                         ))}
                     </div>
                 </section>
+                <section id="" className='py-20 lg:py-32 flex flex-col gap-24'>
+                    <div className="flex flex-col gap-2 text-center">
+                        <h6 className="text-large sm:text-xl md:text-2xl">
+                            View my github contributions.
+                        </h6>
+                        <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                            Days I <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">code on</span> Github
+                        </h3>
+                    </div>
+                    <Github />
+                </section>
                 <section
                     id="about"
                     className="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
@@ -171,62 +183,62 @@ const Main = (props: Props) => {
                     >
                         <table className="bg-white text-slate-700 rounded ml-auto mr-auto w-full">
                             {/* <thead className=""> */}
-                                <tr className="">
-                                    <th className="text-left p-4">Criteria</th>
-                                    <th className="text-left p-4">Candidate #1</th>
-                                    <th className="text-left p-4">Candidate #2</th>
-                                    <th className="text-left p-4">Candidate #3</th>
-                                    <th
-                                        className="bg-blue-700 text-white text-left p-4"
-                                    >Me</th>
-                                </tr>
+                            <tr className="">
+                                <th className="text-left p-4">Criteria</th>
+                                <th className="text-left p-4">Candidate #1</th>
+                                <th className="text-left p-4">Candidate #2</th>
+                                <th className="text-left p-4">Candidate #3</th>
+                                <th
+                                    className="bg-blue-700 text-white text-left p-4"
+                                >Me</th>
+                            </tr>
                             {/* </thead> */}
                             {/* <tbody> */}
-                                <tr className="">
-                                    <td
-                                        className="font-semibold text-sm text-left p-4"
-                                    >Dedication</td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                                </tr>
-                                <tr className="">
-                                    <td
-                                        className="font-semibold text-sm text-left p-4"
-                                    >Reliability</td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                                </tr>
-                                <tr>
-                                    <td
-                                        className="font-semibold text-sm text-left p-4"
-                                    >Communication Skills</td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                                </tr>
-                                <tr className="">
-                                    <td
-                                        className="font-semibold text-sm text-left p-4"
-                                    >Confidence</td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                                </tr>
-                                <tr className="">
-                                    <td
-                                        className="font-semibold text-sm text-left p-4"
-                                    >Progamming Ability</td>
-                                    <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
-                                    <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
-                                </tr>
+                            <tr className="">
+                                <td
+                                    className="font-semibold text-sm text-left p-4"
+                                >Dedication</td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
+                            </tr>
+                            <tr className="">
+                                <td
+                                    className="font-semibold text-sm text-left p-4"
+                                >Reliability</td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
+                            </tr>
+                            <tr>
+                                <td
+                                    className="font-semibold text-sm text-left p-4"
+                                >Communication Skills</td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
+                            </tr>
+                            <tr className="">
+                                <td
+                                    className="font-semibold text-sm text-left p-4"
+                                >Confidence</td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
+                            </tr>
+                            <tr className="">
+                                <td
+                                    className="font-semibold text-sm text-left p-4"
+                                >Progamming Ability</td>
+                                <td className="text-left p-4"><FaCheck className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaTimes className="text-slate-500" /></td>
+                                <td className="text-left p-4"><FaCheck className="text-blue-500" /></td>
+                            </tr>
                             {/* </tbody> */}
                         </table>
                     </div>
