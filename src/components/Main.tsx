@@ -98,7 +98,7 @@ const Main = (props: Props) => {
                             <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400"> Developer</span>
                         </h2>
                         <p className="text-base sm:text-lg md:text-xl">
-                            I am a Passionate <span className="text-blue-400 text-extrabold"><strong>Web</strong></span> Developer, <span className="text-blue-400 text-extrabold"><strong>Open Source</strong></span> Contributor and <span className="text-blue-400 text-extrabold"><strong>AI/ML, Blockchain</strong></span> Enthusiast.
+                            I am a Passionate <span className="text-blue-400 text-extrabold"><strong>Web</strong></span> Developer, <span className="text-blue-400 text-extrabold"><strong>Open Source</strong></span> Contributor and <span className="text-blue-400 text-extrabold"><strong>AI/ML + Blockchain</strong></span> Enthusiast.
                             My <span className="text-blue-400 text-extrabold"><strong> favorite tech</strong></span> includes MERN, Next.js, Prisma, Tailwind CSS, Flask and Python.
                         </p>
                         <a
@@ -120,7 +120,7 @@ const Main = (props: Props) => {
                         />
                     </div>
                 </section>
-                <section className="py-20 lg:py-32 flex flex-col gap-24" id="projects">
+                <section className="py-8 sm:py-14 flex flex-col gap-24" id="projects">
                     <div className="flex flex-col gap-2 text-center">
                         <h6 className="text-large sm:text-xl md:text-2xl">
                             Some of my amazing projects.
@@ -143,7 +143,7 @@ const Main = (props: Props) => {
                         ))}
                     </div>
                 </section>
-                <section id="" className='py-20 lg:py-32 flex flex-col gap-24'>
+                <section id="" className='py-8 sm:py-14 flex flex-col gap-14'>
                     <div className="flex flex-col gap-2 text-center">
                         <h6 className="text-large sm:text-xl md:text-2xl">
                             View my github contributions.
@@ -154,9 +154,19 @@ const Main = (props: Props) => {
                     </div>
                     <Github />
                 </section>
+                <section id="" className='py-8 sm:py-14 flex flex-col gap-14'>
+                    <div className='flex flex-col items-center justify-center'>
+                        <div className="flex flex-col text-center">
+                            <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                                Alston&apos;s <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Contribution</span> Graph
+                            </h3>
+                        </div>
+                        <img src='https://github-readme-activity-graph.vercel.app/graph?username=Alstudd&theme=github-compact&hide_border=true&color=ffffff&line=42a5f5&point=ffffff&hide_title=true' />
+                    </div>
+                </section>
                 <section
                     id="about"
-                    className="py-20 pt-10 lg:pt-16 lg:py-32 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
+                    className="py-8 sm:py-14 flex flex-col gap-16 sm:gap-20 md:gap-24 relative"
                 >
                     <div
                         className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 py-4"
