@@ -4,6 +4,8 @@ import Step from './Step';
 import { FaEthereum, FaRobot, FaNotesMedical, FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 import Github from './Github';
 import Typewriter from 'typewriter-effect';
+import { FaPerson } from 'react-icons/fa6';
+import { AiOutlineMail } from 'react-icons/ai';
 
 type Props = {}
 
@@ -120,14 +122,14 @@ const Main = (props: Props) => {
                             My <span className="text-blue-400 text-extrabold"><strong> favorite tech</strong></span> includes MERN, Next.js, Prisma, Tailwind CSS, Flask and Python.
                         </p>
                         <a
-                            href="https://www.github.com/Alstudd"
+                            href="mailto:alstonsoares17@gmail.com"
                             target="_blank"
                             className="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
                         >
                             <div
                                 className="absolute top-0 right-full w-full h-full bg-blue-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
                             />
-                            <h4 className="relative z-9">Contact Me &rarr;</h4>
+                            <h4 className="relative z-9 flex items-center gap-3"><AiOutlineMail /> Contact Me</h4>
                         </a>
                     </div>
                     <div className="relative shadow-2xl grid place-items-center">

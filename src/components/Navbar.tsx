@@ -1,8 +1,9 @@
 import React from 'react';
+import { AiOutlineMail } from 'react-icons/ai';
 
 type Props = {};
 
-const Navbar = (props: Props) => {
+const Navbar = ({ y }: Props & { y: any }) => {
     const tabs = [
         { name: "Projects", link: "#projects" },
         { name: "About me", link: "#about" },
@@ -14,7 +15,7 @@ const Navbar = (props: Props) => {
     return (
         <div>
             <header className={"text-white fixed z-50 top-0 w-full px-6 py-4 flex items-center justify-between border-b border-solid " +
-                (true
+                (y > 0
                     ? " py-4 bg-slate-950 border-blue-950"
                     : " py-6 bg-transparent border-transparent")}>
                 <h1 className="font-medium">
@@ -37,7 +38,7 @@ const Navbar = (props: Props) => {
                         <div
                             className="absolute top-0 right-full w-full h-full bg-blue-400 opacity-20 group-hover:translate-x-full z-0 duration-200"
                         />
-                        <h4 className="relative z-9">Contact Me</h4>
+                        <h4 className="relative z-9 flex items-center gap-3"><AiOutlineMail /> Contact Me</h4>
                     </a>
                 </div>
             </header>
