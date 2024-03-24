@@ -184,7 +184,7 @@ const Main = (props: Props) => {
                 </section>
                 <section
                     id="about"
-                    className="py-8 sm:py-14 flex flex-col gap-16 relative"
+                    className="py-8 sm:py-14 flex flex-col gap-10 relative"
                 >
                     <div
                         className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-700 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-700 py-4"
@@ -235,7 +235,7 @@ const Main = (props: Props) => {
                             The <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Complete</span> Package
                         </h3>
                     </div>
-                    <div className="flex flex-col gap-10 max-w-[800px] mx-auto w-full shadow-2xl shadow-blue-500 mb-20">
+                    <div className="flex flex-col gap-10 max-w-[800px] mx-auto w-full shadow-2xl shadow-blue-500 mb-10">
                         <div className="overflow-x-auto">
                             <table className="table-auto min-w-full bg-white rounded-4xl text-slate-500">
                                 <thead>
