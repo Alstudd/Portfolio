@@ -199,7 +199,7 @@ const Main = (props: Props) => {
                     <p className="w-full text-center py-2 mx-auto poppins font-semibold text-2xl sm:text-3xl md:text-4xl">
                         I am <span className='poppins' id="wait">{dots}</span>
                     </p>
-                    <div className="flex flex-col gap-20 w-full mx-auto max-w-[800px] bg-gradient-to-r from-blue-600 to-cyan-400 p-10 rounded-xl shadow-2xl shadow-blue-600">
+                    <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px] bg-gradient-to-r from-blue-600 to-cyan-400 p-10 rounded-xl shadow-2xl shadow-blue-600">
                         {benefits.map((benefit, index) => (
                             <div key={index} className="flex gap-6 sm:gap-8">
                                 <p
