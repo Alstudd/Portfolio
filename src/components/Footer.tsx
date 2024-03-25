@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
     return (
         <footer className="bg-slate-950 border-t border-solid border-blue-950 text-gray-300 py-6 relative z-[20] px-24">
             <div className="container mx-auto flex sm:flex-row flex-col gap-4 items-center justify-between">
-                <div className="flex items-center gap-1">
+                <div className="sm:flex hidden items-center gap-1">
                     <h1 className="font-medium">
                         Developed by <b className="font-bold poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Alston</b> <span className=""> Soares</span>
                     </h1>
@@ -19,6 +19,23 @@ const Footer = (props: Props) => {
                     >
                         <AiFillHeart />
                     </a>
+                </div>
+                <div className='sm:hidden flex flex-col gap-1 items-center'>
+                    <h1 className="font-medium">
+                        Developed by
+                    </h1>
+                    <div className="flex items-center gap-1">
+                        <h1 className="font-medium">
+                            <b className="font-bold poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">Alston</b> <span className=""> Soares</span>
+                        </h1>
+                        <a
+                            href='https://github.com/Alstudd/Portfolio'
+                            target='_blank'
+                            style={{ color: '#42a5f5' }}
+                        >
+                            <AiFillHeart />
+                        </a>
+                    </div>
                 </div>
                 <div className="flex items-center space-x-4">
                     <a href="https://www.github.com/Alstudd" target='_blank' className="hover:text-gray-400 transition duration-300">

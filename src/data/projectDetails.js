@@ -32,7 +32,7 @@ const projectDetails = [
         name: "Swasth",
         href: "https://github.com/Alstudd/Health-Web-App-KnowCode",
         // live: "https://swasth-flask.onrender.com/",
-        mainImg: "/projects/questify.png",
+        mainImg: "/projects/swasth.png",
         icon: <FaNotesMedical />,
         head: "Swasth is a",
         type: "web application made with",
