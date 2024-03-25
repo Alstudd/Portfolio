@@ -23,17 +23,17 @@ const Github = () => {
         color="#42a5f5"
         fontSize={16}
       />
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-4">
         <button
           disabled={year === new Date("2020").getFullYear()}
-          className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400 hover:bg-blue-600 font-bold py-0 px-4 rounded-l border-2 border-white"
+          className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400 hover:bg-blue-600 font-bold py-0 px-4 rounded-l-lg border-2 border-white"
           onClick={() => setYear(year - 1)}
         >
           {`<`}
         </button>
         <button
           disabled={year === currentYear}
-          className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400 hover:bg-blue-600 font-bold py-0 px-4 rounded-r border-2 border-white"
+          className="text-center text-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400 hover:bg-blue-600 font-bold py-0 px-4 rounded-r-lg border-2 border-white"
           onClick={() => setYear(year + 1)}
         >
           {`>`}

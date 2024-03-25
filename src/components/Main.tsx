@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import Step from './Step';
-import { FaEthereum, FaRobot, FaNotesMedical, FaGithub, FaCheck, FaTimes } from "react-icons/fa";
+import { FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 import Github from './Github';
 import Typewriter from 'typewriter-effect';
-import { FaPerson } from 'react-icons/fa6';
 import { AiOutlineMail } from 'react-icons/ai';
+import Slider from './Slider';
+import ProjectSlider from './ProjectSlider';
 
 type Props = {}
 
@@ -25,47 +25,6 @@ const Main = (props: Props) => {
 
         return () => clearInterval(interval);
     }, []);
-    const steps = [
-        {
-            name: "Questify AI",
-            href: "https://github.com/Alstudd/Questify-AI",
-            live: "https://questify-ai.netlify.app/",
-            mainImg: "/questify.png",
-            icon: <FaRobot />,
-            head: "Questify AI is an",
-            type: "AI-integrated web app created with",
-            techStack: "Next.js, TypeScript, Prisma, MongoDB and OpenAI LLM.",
-            content: "It is an AI Question Generator and Course Generator. It is an all-in-one edtech platform for game based learning and more. A fine tuned OpenAI LLM model is used to get the most accurate results.",
-            description:
-                "AI Question Generator and Course Generator using Next.js, TypeScript, Prisma, MongoDB and OpenAI LLM.",
-        },
-        {
-            name: "EtherShare",
-            href: "https://github.com/Alstudd/EtherShare",
-            live: "https://ethershare.vercel.app/",
-            mainImg: "/ethershare.png",
-            icon: <FaEthereum />,
-            head: "EtherShare is a",
-            type: "React.js, Web 3.0 & ETH (crypto) sharing platform created using",
-            techStack: "React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS.",
-            content: "It is a basic platform for sharing ETH with friends and family. The web app has a modern and responsive UI design and is built with the latest technologies.",
-            description:
-                "A basic ETH (crypto) sharing platform using React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS",
-        },
-        {
-            name: "Swasth",
-            href: "https://github.com/Alstudd/Health-Web-App-KnowCode",
-            // live: "https://swasth-flask.onrender.com/",
-            mainImg: "/questify.png",
-            icon: <FaNotesMedical />,
-            head: "Swasth is a",
-            type: "web application hosted on Render made with",
-            techStack: "Flask.",
-            content: "It consists of an EHR system for a hospital along with healthcare chatbot, disease prediction, face recognition AI, video chat, meditation, insurance facility ads and admin portal. It is a one stop solution for all healthcare needs.",
-            description:
-                "An all in one health web app using Flask with an EHR system for a hospital along with healthcare chatbot, disease prediction, face recognition AI, video chat, meditation, insurance facility ads and admin portal.",
-        },
-    ];
 
     const benefits = [
         {
@@ -140,7 +99,7 @@ const Main = (props: Props) => {
                         />
                     </div>
                 </section>
-                <section className="py-8 sm:py-14 flex flex-col gap-24" id="projects">
+                <section className="py-8 sm:py-14 flex flex-col gap-14" id="projects">
                     <div className="flex flex-col gap-2 text-center">
                         <h6 className="text-large sm:text-xl md:text-2xl">
                             Some of my amazing projects.
@@ -152,16 +111,12 @@ const Main = (props: Props) => {
                     <a
                         href="https://www.github.com/Alstudd"
                         target="_blank"
-                        className="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-blue-700 duration-200"
+                        className="Welcome-box-2 opacity-[0.9] mx-auto px-4 py-2 border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 hover:border-blue-700 duration-200"
                     >
                         <FaGithub />
                         <p>View my github</p>
                     </a>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
-                        {steps.map((step, index) => (
-                            <Step key={index} step={step} />
-                        ))}
-                    </div>
+                    <ProjectSlider />
                 </section>
                 <section id="" className='py-8 sm:py-14 flex flex-col gap-14'>
                     <div className="flex flex-col gap-2 text-center">
@@ -293,6 +248,9 @@ const Main = (props: Props) => {
                         <p>Scroll to see more &rarr;</p>
                     </div>
                 </section>
+                {/* <section id="" className='py-8 sm:py-14 flex flex-col gap-14'>
+                    <Slider />
+                </section> */}
             </main>
         </div>
     )

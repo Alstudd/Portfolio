@@ -1,12 +1,13 @@
 import React from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
+import { FaCode, FaLaptop, FaTerminal } from 'react-icons/fa';
 
 type Props = {};
 
 const Navbar = ({ y }: Props & { y: any }) => {
     const tabs = [
         { name: "Projects", link: "#projects" },
-        { name: "About me", link: "#about" },
+        { name: "About", link: "#about" },
         { name: "Blog", link: "https://www.github.com/Alstudd" },
         // { name: "Contact", link: "" },
         // { name: '', link: '' },
@@ -18,9 +19,13 @@ const Navbar = ({ y }: Props & { y: any }) => {
                 (y > 0
                     ? " py-4 bg-slate-950 border-blue-950"
                     : " py-6 bg-transparent border-transparent")}>
-                <h1 className="font-medium">
-                    <b className="font-bold poppins">Alston</b> <span className="">Soares</span>
-                </h1>
+                <div className='flex items-center gap-4'>
+                    {/* <FaLaptop className='text-2xl' /> */}
+                    <img src="/alston.jpeg" alt="Alston Soares" className="w-11 h-11 rounded-full" />
+                    <h1 className="font-medium text-xl">
+                        <b className="font-bold poppins">Alston Soares</b>
+                    </h1>
+                </div>
                 <div className="sm:flex items-center gap-4 hidden">
                     {tabs.map((tab, index) => (
                         <a
