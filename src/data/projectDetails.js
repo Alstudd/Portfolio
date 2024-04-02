@@ -1,5 +1,5 @@
-import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal } from "react-icons/fa";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
+import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding } from "react-icons/fa";
+import { FaComputer, FaMessage, FaShield } from "react-icons/fa6";
 
 const projectDetails = [
     {
@@ -26,7 +26,7 @@ const projectDetails = [
         techStack: "React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS.",
         content: "It is a basic web3.0 platform for sharing ETH with anyone in the world.",
         description:
-            "A basic ETH (crypto) sharing platform using React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS",
+            "A basic ETH (crypto) sharing platform using React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS.",
     },
     {
         name: "Swasth",
@@ -78,7 +78,7 @@ const projectDetails = [
         techStack: "Next.js, TypeScript, Prisma, MongoDB and Zod.",
         content: "It is an e-commerce platform with a focus on user experience, security and authentication provided by NextAuth.",
         description:
-            "A basic ETH (crypto) sharing platform using React.js, Solidity, Ethers.js, Hardhat and Tailwind CSS",
+            "E-Commerce Platform using Next.js, TypeScript, Prisma, MongoDB and Zod.",
     },
     {
         name: "Betcrypt",
@@ -105,6 +105,96 @@ const projectDetails = [
         content: "It is a terminal portfolio that showcases my projects, skills and contact information. It is a fun and interactive way to view my portfolio.",
         description:
             "Terminal Portfolio using React.",
+    },
+    {
+        name: "Public Square",
+        href: "https://github.com/Alstudd/Recursion5-PaypalMafia",
+        live: "https://public-square-dev.vercel.app/",
+        mainImg: "/projects/public-square.png",
+        icon: <FaBook />,
+        head: "Public Square is a",
+        type: "dApp made using",
+        techStack: "React, Firebase, Solidity, Ethers.js, Polygon, Hardhat, Flask and Python.",
+        content: "It is a Decentralized Web App for Complaint Management.",
+        description:
+            "Decentralized Web App for Complaint Management using React, Firebase, Solidity, Ethers.js, Polygon, Hardhat, Flask and Python.",
+    },
+    {
+        name: "OptiPick",
+        href: "https://github.com/Alstudd/OptiPick",
+        // live: "https://optipick.vercel.app/",
+        mainImg: "/projects/optipick.png",
+        icon: <FaStar />,
+        head: "OptiPick is a",
+        type: "web app and chrome extension made using",
+        techStack: "React, Plasmo (for chrome extension), Express, Python, Azure and Gemini API.",
+        content: "It provides sentimental analysis of amazon customer reviews for any product link.",
+        description:
+            "Sentimental Analysis of Amazon Customer Reviews of any product (Web App + Chrome Extension).",
+    },
+    {
+        name: "Sarthaki",
+        href: "https://github.com/Alstudd/Sarthaki",
+        live: "https://sarthaki-v1-0.vercel.app/",
+        mainImg: "/projects/sarthaki.png",
+        icon: <FaShield />,
+        head: "Sarthaki is a",
+        type: "web app made using",
+        techStack: "React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
+        content: "It provides MIS reports, dashboard to users of an accounting firm stored in our Firebase database. This was a project for a client.",
+        description:
+            "MIS Reports and Dashboard for an accounting firm using React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
+    },
+    {
+        name: "Hawkeye CV",
+        href: "https://github.com/Alstudd/ANPR-Model",
+        live: "https://anpr-model.onrender.com/",
+        mainImg: "/projects/anpr-model.png",
+        icon: <FaPython />,
+        head: "Hawkeye CV is an",
+        type: "ANPR model made using",
+        techStack: "OpenCV, Python, Flask, EasyOCR and SQLAlchemy",
+        content: " for detecting and extracting number plates from videos, images and live camera feed.",
+        description:
+            "ANPR Model made using OpenCV, Python, Flask, EasyOCR and SQLAlchemy.",
+    },
+    {
+        name: "Bubble Chat",
+        href: "https://github.com/Alstudd/Video-Chat-WebRTC",
+        live: "https://video-chat-alstudd.netlify.app/",
+        mainImg: "/projects/video-chat.png",
+        icon: <FaMessage />,
+        head: "Bubble Chat is a",
+        type: "website made using",
+        techStack: "HTML5, CSS3, JavaScript and WebRTC.",
+        content: "I used Agora.io SDK for real-time chat feature.",
+        description:
+            "Video Chat Application using HTML5, CSS3, JavaScript and WebRTC.",
+    },
+    {
+        name: "Object Detection Model",
+        href: "https://github.com/Alstudd/Object-Detection-Model",
+        // live: "https://video-chat-alstudd.netlify.app/",
+        mainImg: "/projects/video-chat.png",
+        icon: <FaComputer />,
+        head: "This is an",
+        type: "object detection model made using",
+        techStack: "Flask, Python, Yolov5 and PostgreSQL DB.",
+        content: "I referred to a tutorial on YouTube to create this video chat application.",
+        description:
+            "Object Detection Model using Flask, Python, Yolov5 and PostgreSQL DB.",
+    },
+    {
+        name: "Dream Avenue",
+        href: "https://github.com/Alstudd/Hacks24-Tech-Tietans",
+        // live: "https://video-chat-alstudd.netlify.app/",
+        mainImg: "/projects/dream-avenue.png",
+        icon: <FaBuilding />,
+        head: "Dream Avenue is a",
+        type: "Decentralized Real Estate Web App (Estate Chain) made using",
+        techStack: "React, Tailwind, Firebase, Solidity, Polygon, Hardhat and Alchemy.",
+        description:
+            "Decentralized Real Estate Web App (Estate Chain) using React, Tailwind, Firebase, Solidity, Polygon, Hardhat and Alchemy.",
     },
 ];
 
