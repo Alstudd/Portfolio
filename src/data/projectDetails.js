@@ -1,5 +1,5 @@
 import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding } from "react-icons/fa";
-import { FaComputer, FaMessage, FaShield } from "react-icons/fa6";
+import { FaComputer, FaMessage, FaPerson, FaShield } from "react-icons/fa6";
 
 const projectDetails = [
     {
@@ -148,7 +148,7 @@ const projectDetails = [
     {
         name: "Hawkeye CV",
         href: "https://github.com/Alstudd/ANPR-Model",
-        live: "https://anpr-model.onrender.com/",
+        // live: "https://anpr-model.onrender.com/",
         mainImg: "/projects/anpr-model.png",
         icon: <FaPython />,
         head: "Hawkeye CV is an",
@@ -188,13 +188,27 @@ const projectDetails = [
         name: "Dream Avenue",
         href: "https://github.com/Alstudd/Hacks24-Tech-Tietans",
         // live: "https://video-chat-alstudd.netlify.app/",
-        mainImg: "/projects/dream-avenue.png",
+        mainImg: "/projects/dream-avenue2.png",
         icon: <FaBuilding />,
         head: "Dream Avenue is a",
         type: "Decentralized Real Estate Web App (Estate Chain) made using",
         techStack: "React, Tailwind, Firebase, Solidity, Polygon, Hardhat and Alchemy.",
+        content: "User can sell, buy and list properties on the Polygon Network.",
         description:
             "Decentralized Real Estate Web App (Estate Chain) using React, Tailwind, Firebase, Solidity, Polygon, Hardhat and Alchemy.",
+    },
+    {
+        name: "WeWomen",
+        href: "https://github.com/Alstudd/WeWomen",
+        live: "https://wewomen.netlify.app/",
+        mainImg: "/projects/wewomen.png",
+        icon: <FaPerson />,
+        head: "WeWomen is a",
+        type: "static webpage made using",
+        techStack: "React.js and Tailwind CSS.",
+        content: "It was a project made to empower women worldwide. It is a comprehensive solution created to empower women by tackling the problems they encounter every day",
+        description:
+            "Static webpage made using React.js and Tailwind CSS.",
     },
 ];
 
