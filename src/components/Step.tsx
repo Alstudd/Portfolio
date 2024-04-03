@@ -12,11 +12,11 @@ const Step = ({ step }: Props & { step: any }) => {
                     target="_blank"
                     className="flex flex-col gap-4"
                 >
-                    <div
+                    <a href='google.com' target='_blank'
                         className="bg-slate-950 grid place-items-center px-4 text-5xl md:text-6xl -mt-10 sm:-mt-12 md:-mt-14 lg:-mt-16 mx-auto duration-200"
                     >
                         {step.icon}
-                    </div>
+                    </a>
                     {
                         !step.live ? <img src={step.mainImg} alt="" /> : <a href={step.live} target='_blank'><img src={step.mainImg} alt="" /></a>
                     }
