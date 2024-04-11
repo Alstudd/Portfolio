@@ -6,6 +6,7 @@ import Typewriter from 'typewriter-effect';
 import { AiOutlineMail } from 'react-icons/ai';
 import Slider from './Slider';
 import ProjectSlider from './ProjectSlider';
+import Skills from './Skills';
 
 type Props = {}
 
@@ -251,6 +252,7 @@ const Main = (props: Props) => {
                 {/* <section id="" className='py-8 sm:py-14 flex flex-col gap-14'>
                     <Slider />
                 </section> */}
+                <Skills />
             </main>
         </div>
     )
