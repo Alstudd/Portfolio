@@ -173,8 +173,8 @@ const projectDetails = [
     },
     {
         name: "Bubble Chat",
-        href: "https://github.com/Alstudd/Video-Chat-WebRTC",
-        live: "https://video-chat-alstudd.netlify.app/",
+        href: "https://github.com/Alstudd/Bubble-Chat",
+        live: "https://bubble-chat-alstudd.netlify.app",
         mainImg: "/projects/video-chat.png",
         icon: <FaMessage />,
         head: "Bubble Chat is a",

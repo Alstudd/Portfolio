@@ -5,14 +5,24 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function Skills() {
   return (
-    <div className="h-[30rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="mt-20 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
-        items={skills1}
+        items={frameworks}
         direction="right"
         speed="slow"
       />
       <InfiniteMovingCards
-        items={skills2}
+        items={databases}
+        direction="left"
+        speed="slow"
+      />
+      <InfiniteMovingCards
+        items={languages}
+        direction="right"
+        speed="slow"
+      />
+      <InfiniteMovingCards
+        items={technologies}
         direction="left"
         speed="slow"
       />
@@ -20,71 +30,187 @@ export default function Skills() {
   );
 }
 
-const skills1 = [
+const frameworks = [
     {
-        image: "/nextjs.png",
+        image: "/skills/nextjs.png",
         name: "Next.js",
     },
     {
-        image: "/react.png",
+        image: "/skills/react.png",
         name: "React.js",
     },
     {
-        image: "/js.png",
-        name: "JavaScript",
+        image: "/skills/Flask.png",
+        name: "Flask",
     },
     {
-        image: "/typescript.png",
-        name: "TypeScript",
-    },
-    {
-        image: "/node-js.png",
-        name: "Node.js",
-    },
-    {
-        image: "/express.png",
+        image: "/skills/express.png",
         name: "Express.js",
     },
     {
-        image: "/mongodb.png",
-        name: "MongoDB",
+        image: "/skills/node-js.png",
+        name: "Node.js",
     },
     {
-        image: "/prisma.png",
-        name: "Prisma",
+        image: "/skills/Astro.png",
+        name: "Astro.js",
+    },
+    {
+        image: "/skills/Svelte.png",
+        name: "SvelteKit",
+    },
+    {
+        image: "/skills/tailwind.png",
+        name: "TailwindCSS",
+    },
+    {
+        image: "/skills/Hardhat.png",
+        name: "Hardhat",
+    },
+    {
+        image: "/skills/Bootstrap.png",
+        name: "Bootstrap",
+    },
+    {
+        image: "/skills/mui.png",
+        name: "MaterialUI",
     },
 ]
-const skills2 = [
+const languages = [
     {
-        image: "/html.png",
+        image: "/skills/Python.png",
+        name: "Python",
+    },
+    {
+        image: "/skills/js.png",
+        name: "JavaScript",
+    },
+    {
+        image: "/skills/Solidity.png",
+        name: "Solidity",
+    },
+    {
+        image: "/skills/Markdown.png",
+        name: "Markdown",
+    },
+    {
+        image: "/skills/C.png",
+        name: "C",
+    },
+    {
+        image: "/skills/C++.png",
+        name: "C++",
+    },
+    {
+        image: "/skills/typescript.png",
+        name: "TypeScript",
+    },
+    {
+        image: "/skills/html.png",
         name: "HTML5",
     },
     {
-        image: "/css.png",
+        image: "/skills/Git.png",
+        name: "Git",
+    },
+    {
+        image: "/skills/html.png",
+        name: "HTML5",
+    },
+    {
+        image: "/skills/css.png",
         name: "CSS3",
     },
     {
-        image: "/Firebase.png",
+        image: "/skills/Java.png",
+        name: "Java",
+    },
+]
+const databases = [
+    {
+        image: "/skills/mongodb.png",
+        name: "MongoDB",
+    },
+    {
+        image: "/skills/prisma.png",
+        name: "Prisma",
+    },
+    {
+        image: "/skills/MySQL.png",
+        name: "MySQL",
+    },
+    {
+        image: "/skills/Firebase.png",
         name: "Firebase",
     },
     {
-        image: "/framer.png",
-        name: "FMotion",
+        image: "/skills/Pinecone.png",
+        name: "Pinecone",
     },
     {
-        image: "/nextauth.png",
+        image: "/skills/SQLite.png",
+        name: "SQLite",
+    },
+    {
+        image: "/skills/postgres.png",
+        name: "PostgreSQL",
+    },
+]
+const technologies = [
+    {
+        image: "/skills/Postman.png",
+        name: "Postman",
+    },
+    {
+        image: "/skills/Zod.png",
+        name: "Zod",
+    },
+    {
+        image: "/skills/nextauth.png",
         name: "NextAuth.js",
     },
     {
-        image: "/openai.png",
+        image: "/skills/react-query.png",
+        name: "ReactQuery",
+    },
+    {
+        image: "/skills/openai.png",
         name: "OpenAI",
     },
     {
-        image: "/tailwind.png",
-        name: "Tailwind",
+        image: "/skills/Streamlit.png",
+        name: "Streamlit",
     },
     {
-        image: "/github.svg",
+        image: "/skills/Azure.png",
+        name: "Azure",
+    },
+    {
+        image: "/skills/Pandas.png",
+        name: "Pandas",
+    },
+    {
+        image: "/skills/Numpy.png",
+        name: "Numpy",
+    },
+    {
+        image: "/skills/OpenCV.png",
+        name: "OpenCV",
+    },
+    {
+        image: "/skills/scikit-learn.png",
+        name: "Sklearn",
+    },
+    {
+        image: "/skills/github.svg",
         name: "Github",
+    },
+    {
+        image: "/skills/Kaggle.png",
+        name: "Kaggle",
+    },
+    {
+        image: "/skills/Jupyter.png",
+        name: "Jupyter",
     },
 ]

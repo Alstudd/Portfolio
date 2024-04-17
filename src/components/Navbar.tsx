@@ -8,7 +8,7 @@ const Navbar = ({ y }: Props & { y: any }) => {
     const tabs = [
         { name: "Projects", link: "#projects" },
         { name: "About", link: "#about" },
-        { name: "Blog", link: "https://www.github.com/Alstudd" },
+        { name: "Skills", link: "#skills" },
         // { name: "Contact", link: "" },
         // { name: '', link: '' },
     ];
@@ -32,7 +32,7 @@ const Navbar = ({ y }: Props & { y: any }) => {
                             key={index}
                             href={tab.link}
                             className="duration-200 hover:text-blue-400"
-                            target={index === 2 ? "_blank" : ""}
+                            // target={index === 2 ? "_blank" : ""}
                         >
                             <p>{tab.name}</p>
                         </a>
