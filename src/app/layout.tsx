@@ -55,7 +55,7 @@ export default function RootLayout({
         </div>
         <StarsCanvas />
         <Navbar y={y} />
-        <div className="px-4 py-2">{children}</div>
+        <div className="sm:px-4 px-0 py-2">{children}</div>
         <Footer />
       </body>
     </html>
