@@ -9,22 +9,22 @@ export default function Skills() {
       <InfiniteMovingCards
         items={frameworks}
         direction="right"
-        speed="slow"
+        speed="normal"
       />
       <InfiniteMovingCards
         items={databases}
         direction="left"
-        speed="slow"
+        speed="normal"
       />
       <InfiniteMovingCards
         items={languages}
         direction="right"
-        speed="slow"
+        speed="normal"
       />
       <InfiniteMovingCards
         items={technologies}
         direction="left"
-        speed="slow"
+        speed="normal"
       />
     </div>
   );
