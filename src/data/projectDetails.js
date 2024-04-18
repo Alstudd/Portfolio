@@ -1,4 +1,4 @@
-import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding } from "react-icons/fa";
+import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding, FaVideo, FaBrain } from "react-icons/fa";
 import { FaComputer, FaMessage, FaPerson, FaShield } from "react-icons/fa6";
 
 const projectDetails = [
@@ -68,6 +68,19 @@ const projectDetails = [
             "Terminal Portfolio using React.",
     },
     {
+        name: "3D AI Teacher",
+        href: "https://github.com/Alstudd/3D-AI-Teacher",
+        live: "http://thinklabs-ai-teacher.vercel.app",
+        mainImg: "/projects/3d-ai-teacher.png",
+        icon: <FaVideo />,
+        head: "This is an",
+        type: "AI integrated web app made using",
+        techStack: "Three.js, Next.js, OpenAI and Blender Models.",
+        content: "It is a 3D AI Teacher that teaches you about various topics. For now, it can teach japanese to users along with grammar and vocabulary.",
+        description:
+            "3D AI Teacher using Three.js, Next.js, OpenAI and Blender Models.",
+    },
+    {
         name: "Public Square",
         href: "https://github.com/Alstudd/Recursion5-PaypalMafia",
         live: "https://public-square-dev.vercel.app/",
@@ -118,6 +131,19 @@ const projectDetails = [
         content: "It is a website that showcases the achivements of the SE COMP C batch of TCET. This website also provides the resources and opportunities needed for our academic growth.",
         description:
             "TCET SE COMP C Website using React and Tailwind CSS.",
+    },
+    {
+        name: "ThinkLabs",
+        href: "https://github.com/Alstudd/Think-Labs",
+        // live: "",
+        mainImg: "/projects/thinklabs.jpeg",
+        icon: <FaBrain />,
+        head: "ThinkLabs is a",
+        type: "website built with",
+        techStack: "Next.js and Tailwind CSS.",
+        content: "It is a website made for students and teachers to learn and teach in a personalized way.",
+        description:
+            "ThinkLabs Website using Next.js and Tailwind CSS.",
     },
     {
         name: "Alstazon",
@@ -188,7 +214,7 @@ const projectDetails = [
         name: "Object Detection Model",
         href: "https://github.com/Alstudd/Object-Detection-Model",
         // live: "https://video-chat-alstudd.netlify.app/",
-        mainImg: "/projects/video-chat.png",
+        mainImg: "/projects/object-detection-model.png",
         icon: <FaComputer />,
         head: "This is an",
         type: "object detection model made using",
