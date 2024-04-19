@@ -212,13 +212,13 @@ const Main = (props: Props) => {
               {dots}
             </span>
           </p>
-          <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px] bg-gradient-to-r from-blue-600 to-cyan-400 p-10 rounded-xl shadow-2xl shadow-blue-600">
+          <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px]">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex gap-6 sm:gap-8">
-                <p className="poppins text-4xl sm:text-5xl md:text-6xl text-blue-50 font-semibold">
-                  0{index + 1}
+              <div key={index} className="flex gap-6 sm:gap-16">
+                <p className="poppins text-4xl sm:text-5xl md:text-6xl font-semibold">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">0{index + 1}</span>
                 </p>
-                <div className="flex flex-col gap-6 sm:gap-8">
+                <div className="mt-0.5 flex flex-col gap-6 sm:gap-8">
                   <h3 className="text-2xl sm:text-3xl md:text-5xl">
                     {benefit.name}
                   </h3>

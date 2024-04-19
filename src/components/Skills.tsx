@@ -148,6 +148,14 @@ const databases = [
         name: "Pinecone",
     },
     {
+        image: "/skills/neondb.png",
+        name: "NeonDB",
+    },
+    {
+        image: "/skills/sqlalchemy.png",
+        name: "SQLAlchemy",
+    },
+    {
         image: "/skills/SQLite.png",
         name: "SQLite",
     },

@@ -1,4 +1,4 @@
-import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding, FaVideo, FaBrain } from "react-icons/fa";
+import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding, FaVideo, FaBrain, FaPlane, FaHospital } from "react-icons/fa";
 import { FaComputer, FaMessage, FaPerson, FaShield } from "react-icons/fa6";
 
 const projectDetails = [
@@ -6,6 +6,7 @@ const projectDetails = [
         name: "Questify AI",
         href: "https://github.com/Alstudd/Questify-AI",
         live: "https://questify-ai.netlify.app/",
+        devfolio: "https://devfolio.co/projects/questify-873f",
         mainImg: "/projects/questify.png",
         icon: <FaRobot />,
         head: "Questify AI is an",
@@ -32,11 +33,12 @@ const projectDetails = [
         name: "Swasth",
         href: "https://github.com/Alstudd/Health-Web-App-KnowCode",
         // live: "https://swasth-flask.onrender.com/",
+        devfolio: "https://devfolio.co/projects/swasth-an-allinone-health-app-652a",
         mainImg: "/projects/swasth.png",
         icon: <FaNotesMedical />,
         head: "Swasth is a",
         type: "web application made with",
-        techStack: "Flask.",
+        techStack: "Flask, Python, HTML, CSS, JavaScript, Bootstrap, SQLite and SQLAlchemy.",
         content: "It has an EHR system for a hospital along with healthcare chatbot, disease prediction, face recognition AI, video chat, meditation, insurance facility ads and admin portal.",
         description:
             "An all in one health web app using Flask with an EHR system for a hospital along with healthcare chatbot, disease prediction, face recognition AI, video chat, meditation, insurance facility ads and admin portal.",
@@ -44,7 +46,8 @@ const projectDetails = [
     {
         name: "LearnBlocks",
         href: "https://github.com/Alstudd/Codeshastra_PaypalMafia",
-        // live: "https://wewomen.netlify.app/",
+        // live: "https://",
+        devfolio: "https://devfolio.co/projects/learnblocks-e2ad",
         mainImg: "/projects/learnblocks.jpeg",
         icon: <FaPerson />,
         head: "LearnBlocks is a",
@@ -136,6 +139,7 @@ const projectDetails = [
         name: "ThinkLabs",
         href: "https://github.com/Alstudd/Think-Labs",
         // live: "",
+        devfolio: "https://devfolio.co/projects/thinklabs-e611",
         mainImg: "/projects/thinklabs.jpeg",
         icon: <FaBrain />,
         head: "ThinkLabs is a",
@@ -185,9 +189,24 @@ const projectDetails = [
             "MIS Reports and Dashboard for an accounting firm using React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
     },
     {
+        name: "Medinova",
+        href: "https://github.com/AlvinDHacker/Error_404_BroCodeEx_Medinova/tree/alston",
+        // live: "https://medinova.onrender.com/",
+        devfolio: "https://devfolio.co/projects/medinova-fcee",
+        mainImg: "/projects/medinova.jpeg",
+        icon: <FaHospital />,
+        head: "Medinova is a",
+        type: "web app built using",
+        techStack: "Flask",
+        content: "It is a hospital management system that provides services like booking appointments, viewing reports, etc. It also has a chatbot for answering queries. It was a prototype made for Swasth (final project).",
+        description:
+            "Hospital Management System using Flask, Python, HTML, CSS, JavaScript, Bootstrap and SQLite.",
+    },
+    {
         name: "Hawkeye CV",
         href: "https://github.com/Alstudd/ANPR-Model",
         // live: "https://anpr-model.onrender.com/",
+        devfolio: "https://devfolio.co/projects/hawkeye-computer-vision-e9d1",
         mainImg: "/projects/anpr-model.png",
         icon: <FaPython />,
         head: "Hawkeye CV is an",
@@ -219,9 +238,23 @@ const projectDetails = [
         head: "This is an",
         type: "object detection model made using",
         techStack: "Flask, Python, Yolov5 and PostgreSQL DB.",
-        content: "I referred to a tutorial on YouTube to create this video chat application.",
+        content: "It detects objects in images and videos. It is a model that can be used for security purposes.",
         description:
             "Object Detection Model using Flask, Python, Yolov5 and PostgreSQL DB.",
+    },
+    {
+        name: "TravelBuddy",
+        href: "https://github.com/rahulsingh2312/rubix24_team-zeus",
+        live: "https://travel-buddyrubix.vercel.app/",
+        devfolio: "https://devfolio.co/projects/travelbuddy-0909",
+        mainImg: "/projects/travel-buddy.png",
+        icon: <FaPlane />,
+        head: "TravelBuddy is a",
+        type: "MERN Stack web app made using",
+        techStack: "React, Node.js, Express.js, MongoDB, Tailwind CSS, GCloud APIs and TripAdvisor API.",
+        content: "It is a travel planner and guide for users. It provides information about places to visit, hotels to stay and restaurants to eat.",
+        description:
+            "Travel Planner and Guide using MERN Stack.",
     },
     {
         name: "Dream Avenue",
