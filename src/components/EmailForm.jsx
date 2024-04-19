@@ -2,10 +2,10 @@ import { useForm, ValidationError } from '@formspree/react';
 import { FaSmile } from "react-icons/fa"
 
 function ContactForm() {
-    const [state, handleSubmit] = useForm("mkndkjvr");
+    const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID);
     if (state.succeeded) {
         return <div className="info-box flex flex-col justify-center items-center">
-            <FaSmile className='text-[#2196f3] text-4xl' />
+            <FaSmile className='text-white text-4xl' />
             <h3>Contact Form Submitted!</h3>
             </div>;
     }
