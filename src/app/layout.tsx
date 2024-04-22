@@ -53,7 +53,7 @@ export default function RootLayout({
             <FaArrowUp />
           </button>
         </div>
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
         <Navbar y={y} />
         <div className="sm:px-4 px-0 py-2">{children}</div>
         <Footer />
