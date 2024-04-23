@@ -86,7 +86,7 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item, idx) => (
                     <li
-                        className="max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 pt-4 w-[400px] h-[90px]"
+                        className="max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 pt-5 w-[280px] md:w-[320px] h-[80px]"
                         style={{
                             background:
                                 "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -94,8 +94,8 @@ export const InfiniteMovingCards = ({
                         key={item.name}
                     >
                         <div className='flex justify-center items-center gap-4'>
-                            <img style={{width: "60px", height: "60px", objectFit: "contain"}} src={item.image} alt="" />
-                            <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+                            <img style={{width: "40px", height: "40px", objectFit: "contain"}} src={item.image} alt="" />
+                            <h3 className="font-semibold text-3xl sm:text-3xl md:text-4xl">
                                 <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">{item.name}</span>
                             </h3>
                         </div>

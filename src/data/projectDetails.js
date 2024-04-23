@@ -152,7 +152,7 @@ const projectDetails = [
     {
         name: "Alstazon",
         href: "https://github.com/Alstudd/ecommerce-nextjs",
-        live: "ecommerce-nextjs-alston.vercel.app",
+        live: "https://ecommerce-nextjs-alston.vercel.app/",
         mainImg: "/projects/alstazon.png",
         icon: <FaShoppingCart />,
         head: "Alstazon is an",
