@@ -79,24 +79,23 @@ export const InfiniteMovingCards = ({
             <ul
                 ref={scrollerRef}
                 className={cn(
-                    " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+                    " flex min-w-full shrink-0 gap-8 py-4 w-max flex-nowrap",
                     start && "animate-scroll ",
                     pauseOnHover && "hover:[animation-play-state:paused]"
                 )}
             >
                 {items.map((item, idx) => (
                     <li
-                        className="max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 pt-5 w-[280px] md:w-[320px] h-[80px]"
+                        className="max-w-full relative rounded-2xl border-2 flex-shrink-0 border-solid border-blue-600 px-8 pt-5 w-[280px] md:w-[320px] h-[80px]"
                         style={{
-                            background:
-                                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+                            backgroundColor: "rgb(37 99 235 / 0.5)",
                         }}
                         key={item.name}
                     >
                         <div className='flex justify-center items-center gap-4'>
                             <img style={{width: "40px", height: "40px", objectFit: "contain"}} src={item.image} alt="" />
                             <h3 className="font-semibold text-3xl sm:text-3xl md:text-4xl">
-                                <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">{item.name}</span>
+                                <span className="poppins text-white">{item.name}</span>
                             </h3>
                         </div>
                     </li>
