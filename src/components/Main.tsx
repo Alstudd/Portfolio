@@ -7,6 +7,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import Contact from "./Contact";
 import ProjectSlider from "./ProjectSlider";
 import Skills from "./Skills";
+import InfiniteImages from "./InfiniteImages";
 
 type Props = {};
 
@@ -366,6 +367,9 @@ const Main = (props: Props) => {
           </div>
           <Contact />
         </section>
+        {/* <section id="" className="py-8 sm:py-14 flex flex-col gap-14">
+          <InfiniteImages />
+        </section> */}
       </main>
     </div>
   );

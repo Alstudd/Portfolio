@@ -22,10 +22,10 @@ export default function ProjectSlider() {
                   {step.icon}
                 </div>
                 {!step.live ? (
-                  <img src={step.mainImg} alt="" />
+                  <img className="rounded-md" src={step.mainImg} alt="" />
                 ) : (
                   <a href={step.live} target="_blank">
-                    <img src={step.mainImg} alt="" />
+                    <img className="rounded-md" src={step.mainImg} alt="" />
                   </a>
                 )}
                 <div className="flex gap-3 justify-center items-center">
