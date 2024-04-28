@@ -1,4 +1,4 @@
-import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding, FaVideo, FaBrain, FaPlane, FaHospital } from "react-icons/fa";
+import { FaEthereum, FaRobot, FaNotesMedical, FaLink, FaMoneyCheck, FaMoneyBill, FaShoppingCart, FaPiggyBank, FaTerminal, FaStar, FaBook, FaPython, FaBuilding, FaVideo, FaBrain, FaPlane, FaHospital, FaThinkPeaks, FaDatabase } from "react-icons/fa";
 import { FaComputer, FaMessage, FaPerson, FaShield } from "react-icons/fa6";
 
 const projectDetails = [
@@ -42,6 +42,19 @@ const projectDetails = [
         content: "It has an EHR system for a hospital along with healthcare chatbot, disease prediction, face recognition AI, video chat, meditation, insurance facility ads and admin portal.",
         description:
             "An all in one health web app using Flask with an EHR system for a hospital along with healthcare chatbot, disease prediction, face recognition AI, video chat, meditation, insurance facility ads and admin portal.",
+    },
+    {
+        name: "Custom Data Chatbot",
+        href: "https://github.com/Alstudd/Custom-AI-ChatBot",
+        live: "https://custom-data-chatbot.vercel.app",
+        mainImg: "/projects/custom-data-chatbot.png",
+        icon: <FaDatabase />,
+        head: "This is a",
+        type: "AI web app made using",
+        techStack: "Next.js, OpenAI vector embedding model (text-embedding-ada-002), Pinecone DB, MongoDB Prisma and Clerk.",
+        content: "It is a custom data chatbot that can be used for any purpose. It is a chatbot that can be trained on any data.",
+        description:
+            "Custom Data Chatbot using Next.js, OpenAI vector embedding model (text-embedding-ada-002), Pinecone DB, MongoDB Prisma and Clerk.",
     },
     {
         name: "LearnBlocks",

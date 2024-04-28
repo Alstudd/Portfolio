@@ -7,35 +7,55 @@ export default function InfiniteSlider() {
   const images = [
     {
       img: "/projects/questify.png",
-      project: "https://questify-ai.netlify.app"
+      project: "https://questify-ai.netlify.app",
     },
     {
       img: "/projects/financify.png",
-      project: "https://financify-cod.netlify.app"
+      project: "https://financify-cod.netlify.app",
     },
     {
       img: "/projects/terminal-portfolio.png",
-      project: "https://alston-terminal.vercel.app"
+      project: "https://alston-terminal.vercel.app",
     },
     {
-        img: "/projects/ethershare.png",
-        project: "https://ethershare.vercel.app"
+      img: "/projects/ethershare.png",
+      project: "https://ethershare.vercel.app",
+    },
+    {
+        img: "/projects/custom-data-chatbot.png",
+        project: "https://custom-data-chatbot.vercel.app",
+      },
+    {
+      img: "/projects/3d-ai-teacher.png",
+      project: "https://thinklabs-ai-teacher.vercel.app",
+    },
+    {
+      img: "/projects/public-square.png",
+      project: "https://public-square-dev.vercel.app",
     },
     {
       img: "/projects/betcrypt.png",
-      project: "https://betcrypt-cw.netlify.app"
+      project: "https://betcrypt-cw.netlify.app",
     },
     {
-      img: "/projects/3d-ai-teacher.png",
-      project: "https://thinklabs-ai-teacher.vercel.app"
+      img: "/projects/tcet-se-comp-c.png",
+      project: "https://tcet-se-comp-c.netlify.app",
     },
     {
-        img: "/projects/public-square.png",
-        project: "https://public-square-dev.vercel.app"
+      img: "/projects/video-chat.png",
+      project: "https://bubble-chat-alstudd.netlify.app",
     },
     {
-      img: "/projects/alstazon.png",
-      project: "https://ecommerce-nextjs-alston.vercel.app"
+      img: "/projects/sarthaki.png",
+      project: "https://sarthaki-v1-0.vercel.app",
+    },
+    {
+      img: "/projects/wewomen.png",
+      project: "https://wewomen.netlify.app",
+    },
+    {
+      img: "/projects/travel-buddy.png",
+      project: "https://travel-buddyrubix.vercel.app",
     },
   ];
   const FAST_DURATION = 25;
@@ -90,7 +110,11 @@ export default function InfiniteSlider() {
         }}
       >
         {[...images, ...images].map((item, idx) => (
-          <InfiniteSliderCard image={item.img} project={item.project} key={idx} />
+          <InfiniteSliderCard
+            image={item.img}
+            project={item.project}
+            key={idx}
+          />
         ))}
       </motion.div>
     </main>
