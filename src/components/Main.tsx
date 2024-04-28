@@ -8,6 +8,7 @@ import Contact from "./Contact";
 import ProjectSlider from "./ProjectSlider";
 import Skills from "./Skills";
 import InfiniteImages from "./InfiniteImages";
+import InfiniteSlider from "./InfiniteSlider";
 
 type Props = {};
 
@@ -122,6 +123,9 @@ const Main = (props: Props) => {
               className="object-cover z-[2] max-h-[70vh] rounded-3xl"
             />
           </div>
+        </section>
+        <section id="" className="py-8 sm:py-14 flex flex-col gap-14">
+          <InfiniteSlider />
         </section>
         <section className="py-8 sm:py-14 flex flex-col gap-14" id="projects">
           <div className="flex flex-col gap-2 text-center">
@@ -244,113 +248,6 @@ const Main = (props: Props) => {
                 </div>
               </div>
             ))}
-          </div>
-          <div className="flex flex-col gap-2 text-center mt-20">
-            {/* <h6 className="text-large sm:text-xl md:text-2xl">
-                            Qualities that make me stand out.
-                        </h6> */}
-            <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
-              The{" "}
-              <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-                Complete
-              </span>{" "}
-              Package
-            </h3>
-          </div>
-          <div className="flex flex-col gap-10 max-w-[800px] mx-auto w-full shadow-2xl shadow-blue-500 mb-10">
-            <div className="overflow-x-auto">
-              <table className="table-auto min-w-full bg-white rounded-4xl text-slate-500">
-                <thead>
-                  <tr className="bg-gray-100 border-b border-gray-200">
-                    <th className="p-4 text-left">Criteria</th>
-                    <th className="p-4 text-left">Candidate #1</th>
-                    <th className="p-4 text-left">Candidate #2</th>
-                    <th className="p-4 text-left">Candidate #3</th>
-                    <th className="p-4 text-left bg-blue-700 text-white">Me</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-semibold">Dedication</td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-blue-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-semibold">Reliability</td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-blue-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-semibold">Communication Skills</td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-blue-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-semibold">Confidence</td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-blue-500" />
-                    </td>
-                  </tr>
-                  <tr className="border-b border-gray-200">
-                    <td className="p-4 font-semibold">Programming Ability</td>
-                    <td className="p-4">
-                      <FaCheck className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaTimes className="text-slate-500" />
-                    </td>
-                    <td className="p-4">
-                      <FaCheck className="text-blue-500" />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div className="mx-auto -mt-12 italic sm:hidden opacity-50">
-            <p>Scroll to see more &rarr;</p>
           </div>
         </section>
         <section id="contact" className="py-8 sm:py-14 flex flex-col gap-14">
