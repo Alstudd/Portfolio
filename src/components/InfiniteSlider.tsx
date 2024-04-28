@@ -35,7 +35,7 @@ export default function InfiniteSlider() {
     },
     {
       img: "/projects/betcrypt.png",
-      project: "https://betcrypt-cw.netlify.app",
+      project: "https://betcrypt-cw.vercel.app",
     },
     {
       img: "/projects/tcet-se-comp-c.png",
