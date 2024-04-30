@@ -124,7 +124,7 @@ const Main = (props: Props) => {
             />
           </div>
         </section>
-        <section id="" className="py-8 sm:py-14 flex flex-col gap-14">
+        <section id="" className="hidden lg:flex py-8 flex-col gap-14">
           <InfiniteSlider />
         </section>
         <section className="py-8 sm:py-14 flex flex-col gap-14" id="projects">
@@ -264,9 +264,9 @@ const Main = (props: Props) => {
           </div>
           <Contact />
         </section>
-        {/* <section id="" className="py-8 sm:py-14 flex flex-col gap-14">
+        <section id="" className="py-8 sm:py-14 flex flex-col items-center justify-center gap-14">
           <InfiniteImages />
-        </section> */}
+        </section>
       </main>
     </div>
   );
