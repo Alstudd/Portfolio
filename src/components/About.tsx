@@ -1,8 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { AttentionSeeker, Bounce } from "react-awesome-reveal";
 
 export default function About() {
-    const [expandedIndex, setExpandedIndex] = useState(-1);
+  const [expandedIndex, setExpandedIndex] = useState(-1);
 
   const toggleExpand = (index: any) => {
     setExpandedIndex(index === expandedIndex ? -1 : index);
@@ -36,57 +37,61 @@ export default function About() {
   ];
   return (
     <section id="about" className="py-8 sm:py-14 flex flex-col gap-10 relative">
-      <div className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-600 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-600 py-4">
-        <h6 className="text-large sm:text-xl md:text-2xl">
-          Want to know me better?
-        </h6>
-        <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
-          A bit{" "}
-          <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-            about
-          </span>{" "}
-          me.
-        </h3>
-      </div>
-      <p className="w-full text-center py-2 mx-auto poppins font-semibold text-2xl sm:text-3xl md:text-4xl">
-        I am{" "}
-        <span className="poppins" id="wait">
-          {dots}
-        </span>
-      </p>
-      <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px]">
-        {benefits.map((benefit, index) => (
-          <div key={index} className="flex gap-6 sm:gap-16">
-            <p className="poppins text-4xl sm:text-5xl md:text-6xl font-semibold">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-                0{index + 1}
-              </span>
-            </p>
-            <div className="mt-0.5 flex flex-col gap-6 sm:gap-8">
-              <h3 className="text-2xl sm:text-3xl md:text-5xl">
-                {benefit.name}
-              </h3>
-              {/* Make the description short in mobile and add ... to view */}
-              <p className="sm:block hidden">{benefit.description}</p>
-              <p className="sm:hidden block">
-                {index === expandedIndex
-                  ? benefit.description
-                  : benefit.description.slice(0, 100) + "..."}
-                {index !== expandedIndex && (
-                  <button className="" onClick={() => toggleExpand(index)}>
-                    View More
-                  </button>
-                )}
-                {index === expandedIndex && (
-                  <button className="" onClick={() => toggleExpand(index)}>
-                    View Less
-                  </button>
-                )}
+      <AttentionSeeker effect="rubberBand">
+        <div className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-600 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-600 py-4">
+          <h6 className="text-large sm:text-xl md:text-2xl">
+            Want to know me better?
+          </h6>
+          <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
+            A bit{" "}
+            <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
+              about
+            </span>{" "}
+            me.
+          </h3>
+        </div>
+      </AttentionSeeker>
+        <p className="w-full text-center py-2 mx-auto poppins font-semibold text-2xl sm:text-3xl md:text-4xl">
+          I am{" "}
+          <span className="poppins" id="wait">
+            {dots}
+          </span>
+        </p>
+      <Bounce>
+        <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px]">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex gap-6 sm:gap-16">
+              <p className="poppins text-4xl sm:text-5xl md:text-6xl font-semibold">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
+                  0{index + 1}
+                </span>
               </p>
+              <div className="mt-0.5 flex flex-col gap-6 sm:gap-8">
+                <h3 className="text-2xl sm:text-3xl md:text-5xl">
+                  {benefit.name}
+                </h3>
+                {/* Make the description short in mobile and add ... to view */}
+                <p className="sm:block hidden">{benefit.description}</p>
+                <p className="sm:hidden block">
+                  {index === expandedIndex
+                    ? benefit.description
+                    : benefit.description.slice(0, 100) + "..."}
+                  {index !== expandedIndex && (
+                    <button className="" onClick={() => toggleExpand(index)}>
+                      View More
+                    </button>
+                  )}
+                  {index === expandedIndex && (
+                    <button className="" onClick={() => toggleExpand(index)}>
+                      View Less
+                    </button>
+                  )}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Bounce>
     </section>
   );
 }
