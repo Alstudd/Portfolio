@@ -37,7 +37,7 @@ export default function About() {
   ];
   return (
     <section id="about" className="py-8 sm:py-14 flex flex-col gap-10 relative">
-      <AttentionSeeker effect="rubberBand">
+      <Bounce>
         <div className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-600 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-600 py-4">
           <h6 className="text-large sm:text-xl md:text-2xl">
             Want to know me better?
@@ -50,14 +50,13 @@ export default function About() {
             me.
           </h3>
         </div>
-      </AttentionSeeker>
         <p className="w-full text-center py-2 mx-auto poppins font-semibold text-2xl sm:text-3xl md:text-4xl">
           I am{" "}
           <span className="poppins" id="wait">
             {dots}
           </span>
         </p>
-      <Bounce>
+      
         <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px]">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex gap-6 sm:gap-16">

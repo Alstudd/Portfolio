@@ -17,8 +17,6 @@ export default function GithubContributions() {
             Github
           </h3>
         </div>
-      </Flip>
-      <Flip direction="horizontal">
         <Github />
       </Flip>
       <Zoom direction="down">
