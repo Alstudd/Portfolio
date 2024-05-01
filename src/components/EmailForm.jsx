@@ -63,7 +63,7 @@ function ContactForm() {
 
 export default function EmailForm() {
     return (
-        <div className="sm:w-[400px] md:w-[500px]">
+        <div className="w-full md:w-[500px]">
             <ContactForm />
         </div>
     )
