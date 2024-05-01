@@ -1,14 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { FaGithub, FaCheck, FaTimes } from "react-icons/fa";
 import Github from "./Github";
-import Typewriter from "typewriter-effect";
-import { AiOutlineMail } from "react-icons/ai";
 import Contact from "./Contact";
-import ProjectSlider from "./ProjectSlider";
-import Skills from "./Skills";
 import InfiniteImages from "./InfiniteImages";
 import InfiniteSlider from "./InfiniteSlider";
+import Hero from "./Hero";
+import MyProjects from "./MyProjects";
+import MySkills from "./MySkills";
 
 type Props = {};
 
@@ -49,122 +47,12 @@ const Main = (props: Props) => {
   return (
     <div className="mt-20">
       <main className="relative z-[20] flex flex-col flex-1 p-4">
-        <section
-          id="introPage"
-          className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14"
-        >
-          <div className="flex flex-col lg:justify-center items-center lg:items-start text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
-            <div className="Welcome-box py-[8px] px-[7px] border border-blue-400 opacity-[0.9]">
-              <h1 className="Welcome-text text-[16px] text-white font-semibold poppins flex gap-2">
-                {"🚀 "}{" "}
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Software Developer",
-                      "MERN Stack Developer",
-                      "Open Source Contributor",
-                      "AI/ML & Blockchain Enthusiast",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 50,
-                  }}
-                />
-              </h1>
-            </div>
-            <h2 className="font-semibold text-4xl sm:text-5xl md:text-6xl">
-              <span className="xl:inline-block hidden">Hi! I&apos;m </span>
-              <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-                {" "}
-                Alston
-              </span>{" "}
-              Soares
-              <br />
-              FullStack
-              <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-                {" "}
-                Developer
-              </span>
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl">
-              I am a Passionate{" "}
-              <span className="text-blue-400 text-extrabold">
-                <strong>Web</strong>
-              </span>{" "}
-              Developer,{" "}
-              <span className="text-blue-400 text-extrabold">
-                <strong>Open Source</strong>
-              </span>{" "}
-              Contributor and{" "}
-              <span className="text-blue-400 text-extrabold">
-                <strong>AI/ML + Blockchain</strong>
-              </span>{" "}
-              Enthusiast. My{" "}
-              <span className="text-blue-400 text-extrabold">
-                <strong> favorite tech</strong>
-              </span>{" "}
-              includes MERN, Next.js, Prisma, Tailwind CSS, Flask and Python.
-            </p>
-            <a
-              href="mailto:alstonsoares17@gmail.com"
-              target="_blank"
-              className="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
-            >
-              <div className="absolute top-0 right-full w-full h-full bg-blue-400 opacity-20 group-hover:translate-x-full z-0 duration-200" />
-              <h4 className="relative z-9 flex items-center gap-3">
-                <AiOutlineMail /> Contact Me
-              </h4>
-            </a>
-          </div>
-          <div className="relative shadow-2xl grid place-items-center">
-            <img
-              src="/alston.jpeg"
-              alt="Alstudd"
-              className="object-cover z-[2] max-h-[70vh] rounded-3xl"
-            />
-          </div>
-        </section>
+        <Hero />
         <section id="" className="hidden lg:flex py-8 flex-col gap-14">
           <InfiniteSlider />
         </section>
-        <section className="py-8 sm:py-14 flex flex-col gap-14" id="projects">
-          <div className="flex flex-col gap-2 text-center">
-            <h6 className="text-large sm:text-xl md:text-2xl">
-              Some of my amazing projects.
-            </h6>
-            <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
-              Excited to{" "}
-              <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-                view
-              </span>{" "}
-              my work?
-            </h3>
-          </div>
-          <a
-            href="https://www.github.com/Alstudd"
-            target="_blank"
-            className="Welcome-box-2 opacity-[0.9] mx-auto px-4 py-2 border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 hover:border-blue-700 duration-200"
-          >
-            <FaGithub />
-            <p>View my github</p>
-          </a>
-          <ProjectSlider />
-        </section>
-        <section id="skills" className="py-8 sm:py-14 flex flex-col gap-2">
-          <div className="flex flex-col gap-2 text-center relative before:absolute before:top-0 before:left-0 before:w-2/3 before:h-1.5 before:bg-blue-600 after:absolute after:bottom-0 after:right-0 after:w-2/3 after:h-1.5 after:bg-blue-600 py-4">
-            <h6 className="text-large sm:text-xl md:text-2xl">
-              View my tech stack.
-            </h6>
-            <h3 className="font-semibold text-3xl sm:text-4xl md:text-5xl">
-              My{" "}
-              <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
-                skills
-              </span>{" "}
-              as a developer
-            </h3>
-          </div>
-          <Skills />
-        </section>
+        <MyProjects />
+        <MySkills />
         <section id="" className="py-8 sm:py-14 flex flex-col gap-14">
           <div className="flex flex-col gap-2 text-center">
             <h6 className="text-large sm:text-xl md:text-2xl">

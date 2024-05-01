@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-export default function Skills() {
+export default function SkillSlider() {
   return (
     <div className="mt-20 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards

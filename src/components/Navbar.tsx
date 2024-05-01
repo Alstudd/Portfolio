@@ -26,12 +26,12 @@ const Navbar = ({ y }: Props & { y: any }) => {
                         <b className="font-bold poppins">Alston Soares</b>
                     </h1>
                 </div>
-                <div className="sm:flex items-center gap-4 hidden">
+                <div className="sm:flex items-center gap-6 hidden font-medium text-lg">
                     {tabs.map((tab, index) => (
                         <a
                             key={index}
                             href={tab.link}
-                            className="duration-200 hover:text-blue-400"
+                            className="font-normal poppins duration-200 hover:text-blue-400"
                             // target={index === 2 ? "_blank" : ""}
                         >
                             <p>{tab.name}</p>
