@@ -86,7 +86,7 @@ const languages = [
         name: "JavaScript",
     },
     {
-        image: "/skills/Solidity.png",
+        image: "/skills/Solidity.svg",
         name: "Solidity",
     },
     {
@@ -210,7 +210,7 @@ const technologies = [
         name: "Sklearn",
     },
     {
-        image: "/skills/github.svg",
+        image: "/skills/github.png",
         name: "Github",
     },
     {

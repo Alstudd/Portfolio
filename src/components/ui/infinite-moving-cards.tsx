@@ -93,7 +93,7 @@ export const InfiniteMovingCards = ({
                         key={item.name}
                     >
                         <div className='flex justify-center items-center gap-4'>
-                            <img style={{width: "40px", height: "40px", objectFit: "contain"}} src={item.image} alt="" />
+                            <img style={{width: "40px", height: "40px", objectFit: "contain", borderRadius: "15%"}} src={item.image} alt="" />
                             <h3 className="font-semibold text-3xl sm:text-3xl md:text-4xl">
                                 <span className="poppins text-white">{item.name}</span>
                             </h3>
