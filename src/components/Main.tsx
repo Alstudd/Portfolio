@@ -20,10 +20,10 @@ const Main = (props: Props) => {
         </section>
         <MyProjects />
         <MySkills />
-        <GithubContributions />
         <About />
+        <GithubContributions />
         <Contact />
-        {/* <section id="" className="py-8 sm:py-14 flex flex-col items-center justify-center gap-14">
+        {/* <section id="" className="sm:block hidden py-8 sm:py-14 flex flex-col items-center justify-center gap-14">
           <InfiniteImages />
         </section> */}
       </main>
