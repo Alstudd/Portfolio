@@ -27,7 +27,7 @@ export default function About() {
     {
       name: "a team player",
       description:
-        "I have participated in 8+ national level hackathons and emerged as winner at 3 hackathons. I am able to manage and lead a team to deliver high-quality software solutions on time and within budget. I am a strong believer in the power of teamwork and I am always looking for new ways to improve my leadership skills and help my team achieve their goals.",
+        "I have participated in 10+ national level hackathons and emerged as winner at 4 hackathons. I am able to manage and lead a team to deliver high-quality software solutions on time and within budget. I am a strong believer in the power of teamwork and I am always looking for new ways to improve my leadership skills and help my team achieve their goals.",
     },
     {
       name: "a self taught developer",

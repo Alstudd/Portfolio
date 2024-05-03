@@ -92,7 +92,7 @@ export default function Home() {
           </motion.a>
         </div>
       </AttentionSeeker>
-      <AttentionSeeker effect="tada" delay={1500}>
+      <AttentionSeeker effect="swing" delay={1500}>
         <motion.div
           className="relative shadow-2xl grid place-items-center"
           variants={slideInFromRight(0.8)}
