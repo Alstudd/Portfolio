@@ -57,7 +57,7 @@ export default function About() {
           </span>
         </p>
       
-        <div className="flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px]">
+        <div className="px-4 sm:px-8 py-4 flex flex-col sm:gap-16 gap-10 w-full mx-auto max-w-[800px]">
           {benefits.map((benefit, index) => (
             <div key={index} className="flex gap-6 sm:gap-16">
               <p className="poppins text-4xl sm:text-5xl md:text-6xl font-semibold">

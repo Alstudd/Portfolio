@@ -3,7 +3,7 @@ import Github from "./Github";
 
 export default function GithubContributions() {
   return (
-    <section id="github" className="py-8 sm:py-14 flex flex-col gap-14">
+    <section id="github" className="px-4 sm:px-8 py-12 sm:py-14 flex flex-col gap-14">
       <Flip direction="vertical">
         <div className="flex flex-col gap-2 text-center">
           <h6 className="text-large sm:text-xl md:text-2xl">

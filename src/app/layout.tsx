@@ -1,6 +1,6 @@
 "use client";
 // import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/StarBackground";
 import Navbar from "@/components/Navbar";
@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa"
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: "Alston Soares",
@@ -39,7 +39,7 @@ export default function RootLayout({
   }, [onScroll])
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
+      <body className={` bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
         <div
           className={"fixed bottom-0 right-0 z-[21] duration-200 mb-10 mr-10" +
             (y > 0
@@ -55,7 +55,7 @@ export default function RootLayout({
         </div>
         <StarsCanvas />
         <Navbar y={y} />
-        <div className="sm:px-4 px-0 py-2">{children}</div>
+        <div className="py-2">{children}</div>
         <Footer />
       </body>
     </html>

@@ -7,6 +7,7 @@ import {
 } from "@/utils/motion";
 import Typewriter from "typewriter-effect";
 import { AiOutlineMail } from "react-icons/ai";
+import MyImagesStack from "./MyImagesStack";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       initial="hidden"
       animate="visible"
       id="introPage"
-      className="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14 place-items-center"
+      className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 sm:px-8 py-12 sm:py-20 place-items-center"
     >
       <AttentionSeeker effect="bounce" delay={1500}>
         <div className="flex flex-col lg:justify-center items-center lg:items-start text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
@@ -96,11 +97,12 @@ export default function Home() {
           className="relative shadow-2xl grid place-items-center"
           variants={slideInFromRight(0.8)}
         >
-          <img
-            src="/alston.jpeg"
+          {/* <img
+            src="/myPic.jpg"
             alt="Alstudd"
-            className="object-cover z-[2] max-h-[70vh] rounded-3xl"
-          />
+            className="object-cover z-[2] max-h-[60vh] rounded-3xl"
+          /> */}
+          <MyImagesStack />
         </motion.div>
       </AttentionSeeker>
     </motion.section>

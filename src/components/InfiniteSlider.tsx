@@ -95,9 +95,13 @@ export default function InfiniteSlider() {
   }, [xTranslation, width, duration, rerender]);
 
   return (
-    <main className="py-8 mb-40">
+    <main className="py-8">
+      <div
+        className="overflow-x-hidden flex"
+        // style={{ WebkitOverflowScrolling: "touch" }}
+      >
       <motion.div
-        className="absolute left-0 flex gap-4"
+        className="flex gap-4"
         ref={ref}
         style={{ x: xTranslation }}
         onHoverStart={() => {
@@ -117,6 +121,7 @@ export default function InfiniteSlider() {
           />
         ))}
       </motion.div>
+      </div>
     </main>
   );
 }
