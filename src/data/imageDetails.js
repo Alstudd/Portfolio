@@ -8,7 +8,7 @@ const imageDetails = [
     "err404-2.jpg",
     "err404-3.jpg",
     "err404-4.jpg",
-    "err404-5.jpg",
+    // "err404-5.jpg",
     "gfgsolvingforindia-1.jpg",
     "gfgsolvingforindia-2.jpg",
     "gfgsolvingforindia-3.jpg",
