@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import imageDetails from "@/data/imageDetails";
 
 export default function InfiniteImages() {
   var laptopSettings = {
@@ -24,18 +25,14 @@ export default function InfiniteImages() {
     autoplaySpeed: 2000,
     cssEase: "linear",
   };
-  const images = [
-    "hackanova2.0-1.jpg",
-    "hackanova2.0-2.jpg",
-  ];
   return (
     <div>
       <div className="lg:block hidden container z-20"> 
         <Slider {...laptopSettings}>
-          {images.map((image, index) => (
+          {imageDetails.map((image, index) => (
             <div key={index} className="image p-2">
               <img
-                className="rounded-xl"
+                className="object-cover rounded-xl h-[500px] w-[600px]"
                 src={`/hackathons/${image}`}
                 alt={`Image ${index + 1}`}
               />
@@ -43,12 +40,12 @@ export default function InfiniteImages() {
           ))}
         </Slider>
       </div>
-      <div className="lg:hidden block container z-20 md:w-[600px] sm:w-[500px] w-[300px]"> 
+      <div className="lg:hidden block container z-20 w-[340px] sm:w-fit"> 
         <Slider {...mobileSettings}>
-          {images.map((image, index) => (
+          {imageDetails.map((image, index) => (
             <div key={index} className="image p-2">
               <img
-                className="rounded-xl"
+                className="rounded-xl object-cover h-[340px] sm:h-[500px] w-full"
                 src={`/hackathons/${image}`}
                 alt={`Image ${index + 1}`}
               />
