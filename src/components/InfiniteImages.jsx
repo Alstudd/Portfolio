@@ -40,12 +40,12 @@ export default function InfiniteImages() {
           ))}
         </Slider>
       </div>
-      <div className="lg:hidden block container z-20 w-[300px] sm:w-fit"> 
+      <div className="lg:hidden block container z-20 w-[330px] sm:w-fit"> 
         <Slider {...mobileSettings}>
           {imageDetails.map((image, index) => (
             <div key={index} className="image p-2">
               <img
-                className="rounded-xl object-cover h-[300px] sm:h-[500px] w-full"
+                className="rounded-xl object-cover h-[330px] sm:h-[500px] w-full"
                 src={`/hackathons/${image}`}
                 alt={`Image ${index + 1}`}
               />
