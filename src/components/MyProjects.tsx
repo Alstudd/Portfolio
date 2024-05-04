@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 export default function MyProjects() {
   return (
     <section className="px-4 sm:px-8 py-12 sm:py-14 flex flex-col gap-14" id="projects">
-      <AttentionSeeker effect="rubberBand">
+      <AttentionSeeker effect="flash">
         <div className="flex flex-col gap-2 text-center">
           <h6 className="text-large sm:text-xl md:text-2xl">
             Some of my amazing projects.

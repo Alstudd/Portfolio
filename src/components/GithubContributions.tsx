@@ -1,10 +1,10 @@
-import { AttentionSeeker, Bounce, Flip, Zoom } from "react-awesome-reveal";
+import Reveal, { Zoom } from "react-awesome-reveal";
 import Github from "./Github";
 
 export default function GithubContributions() {
   return (
     <section id="github" className="px-4 sm:px-8 py-12 sm:py-14 flex flex-col gap-14">
-      <Flip direction="vertical">
+      <Reveal>
         <div className="flex flex-col gap-2 text-center">
           <h6 className="text-large sm:text-xl md:text-2xl">
             View my github contributions.
@@ -18,7 +18,7 @@ export default function GithubContributions() {
           </h3>
         </div>
         <Github />
-      </Flip>
+      </Reveal>
       <Zoom direction="down">
         <div className="flex flex-col items-center justify-center">
           <div className="flex flex-col text-center">

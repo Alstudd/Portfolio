@@ -18,7 +18,7 @@ export default function Contact() {
           </h3>
         </div>
       </Rotate>
-      <Reveal effect="fadeInUp">
+      <Reveal>
         <ContactWrapper />
       </Reveal>
     </section>
