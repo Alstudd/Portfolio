@@ -14,6 +14,7 @@ export default function InfiniteImages() {
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    pauseOnHover: false,
   };
   var mobileSettings = {
     dots: false,
@@ -24,6 +25,7 @@ export default function InfiniteImages() {
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    pauseOnHover: false,
   };
   return (
     <div>

@@ -14,6 +14,7 @@ export default function MyImagesStack() {
     slidesToScroll: 1,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    pauseOnHover: false,
   };
   return (
     <div className="container z-20 w-[340px] sm:w-fit lg:w-[600px]">
