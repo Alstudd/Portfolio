@@ -45,10 +45,10 @@ export default function InfiniteSlider() {
       img: "/projects/video-chat.png",
       project: "https://bubble-chat-alstudd.netlify.app",
     },
-    {
-      img: "/projects/sarthaki.png",
-      project: "https://sarthaki-v1-0.vercel.app",
-    },
+    // {
+    //   img: "/projects/sarthaki.png",
+    //   project: "https://sarthaki-v1-0.vercel.app",
+    // },
     {
       img: "/projects/wewomen.png",
       project: "https://wewomen.netlify.app",

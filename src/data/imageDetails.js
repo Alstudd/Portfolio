@@ -1,6 +1,6 @@
 const imageDetails = [
     "hackanova2.0-1.jpg", 
-    "hackanova2.0-2.jpg",
+    // "hackanova2.0-2.jpg",
     "hackanova2.0-3.jpg",
     "hackanova2.0-4.jpg",
     "crescendo2.0.jpg",
@@ -21,8 +21,8 @@ const imageDetails = [
     "mumbai-hacks.jpg",
     "knowcode-1.jpg",
     "knowcode-2.jpg",
-    "knowcode-3.jpg",
-    "knowcode-4.jpg",
+    // "knowcode-3.jpg",
+    // "knowcode-4.jpg",
     "knowcode-5.jpg",
     "vervali-1.jpg",
     "vervali-2.jpg",
@@ -30,11 +30,11 @@ const imageDetails = [
     "hackanova3.0-1.jpg",
     "hackanova3.0-2.jpg",
     "crescendo3.0-1.jpg",
-    "crescendo3.0-2.jpg",
+    // "crescendo3.0-2.jpg",
     "crescendo3.0-3.jpg",
     "crescendo3.0-4.jpg",
     "recursion5.0.jpg",
-    "codeshastra.jpg",
+    // "codeshastra.jpg",
 ];
 
 export default imageDetails;

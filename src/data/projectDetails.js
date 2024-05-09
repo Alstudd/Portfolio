@@ -188,19 +188,19 @@ const projectDetails = [
         description:
             "1-1 crypto betting platform using React.js, Web3.js, Solidity, Hardhat and Tailwind CSS.",
     },
-    {
-        name: "Sarthaki",
-        href: "https://github.com/Alstudd/Sarthaki",
-        live: "https://sarthaki-v1-0.vercel.app/",
-        mainImg: "/projects/sarthaki.png",
-        icon: <FaShield />,
-        head: "Sarthaki is a",
-        type: "web app made using",
-        techStack: "React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
-        content: "It provides MIS reports, dashboard to users of an accounting firm stored in our Firebase database. This was a project for a client.",
-        description:
-            "MIS Reports and Dashboard for an accounting firm using React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
-    },
+    // {
+    //     name: "Sarthaki",
+    //     href: "https://github.com/Alstudd/Sarthaki",
+    //     live: "https://sarthaki-v1-0.vercel.app/",
+    //     mainImg: "/projects/sarthaki.png",
+    //     icon: <FaShield />,
+    //     head: "Sarthaki is a",
+    //     type: "web app made using",
+    //     techStack: "React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
+    //     content: "It provides MIS reports, dashboard to users of an accounting firm stored in our Firebase database. This was a project for a client.",
+    //     description:
+    //         "MIS Reports and Dashboard for an accounting firm using React, Tailwind CSS, Firebase, Python and TDL (Tally Definition Language).",
+    // },
     {
         name: "Medinova",
         href: "https://github.com/AlvinDHacker/Error_404_BroCodeEx_Medinova/tree/alston",
