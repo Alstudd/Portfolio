@@ -19,7 +19,7 @@ export default function MyImagesStack() {
   return (
     <div className="container z-20 w-[340px] sm:w-fit lg:w-[600px]">
       <Slider {...settings}>
-        {[...Array(16)].map((image, index) => (
+        {[...Array(13)].map((image, index) => (
           <div key={index} className="image p-2">
             <img
               className="object-cover rounded-xl h-[340px] sm:h-[500px] w-full"
