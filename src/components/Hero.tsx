@@ -51,7 +51,7 @@ export default function Home() {
             </span>{" "}
             Soares
             <br />
-            FullStack
+            Full Stack
             <span className="poppins text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-400">
               {" "}
               Developer
@@ -92,7 +92,7 @@ export default function Home() {
           </motion.a>
         </div>
       </AttentionSeeker>
-      <AttentionSeeker effect="bounce" delay={1500}>
+      <AttentionSeeker effect="tada" delay={1500}>
         <motion.div
           className="relative shadow-2xl grid place-items-center"
           variants={slideInFromRight(0.8)}
