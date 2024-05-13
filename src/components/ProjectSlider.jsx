@@ -4,6 +4,7 @@ import "swiper/css";
 import { projectSliderSettings } from "../data/projectSliderSettings";
 import projectDetails from "../data/projectDetails";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 export default function ProjectSlider() {
   return (
@@ -16,22 +17,43 @@ export default function ProjectSlider() {
               <a
                 href={step.href}
                 target="_blank"
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-4 items-center"
               >
                 <div className="bg-slate-950 grid place-items-center px-4 text-5xl md:text-6xl -mt-10 sm:-mt-12 md:-mt-14 lg:-mt-16 mx-auto duration-200">
                   {step.icon}
                 </div>
                 {!step.live ? (
-                  <img className="rounded-md" src={step.mainImg} alt="" />
+                  <Image
+                    width={350}
+                    height={250}
+                    className="rounded-md"
+                    src={step.mainImg}
+                    alt=""
+                  />
                 ) : (
                   <a href={step.live} target="_blank">
-                    <img className="rounded-md" src={step.mainImg} alt="" />
+                    <Image
+                      width={350}
+                      height={250}
+                      className="rounded-md"
+                      src={step.mainImg}
+                      alt=""
+                    />
                   </a>
                 )}
                 <div className="flex gap-3 justify-center items-center">
                   {step.devfolio && (
-                    <a href={step.devfolio} target="_blank" rel="noopener noreferrer">
-                      <img className="w-10 h-10" src="/devfolio.png" alt="" />
+                    <a
+                      href={step.devfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Image
+                        width={40}
+                        height={40}
+                        src="/devfolio.png"
+                        alt=""
+                      />
                     </a>
                   )}
                   <h3 className="font-medium text-xl sm:text-2xl md:text-3xl">
