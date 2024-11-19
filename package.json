@@ -12,6 +12,8 @@
     "@formspree/react": "^2.5.1",
     "@react-three/drei": "^9.102.6",
     "@react-three/fiber": "^8.15.19",
+    "@solana/actions": "^1.6.4",
+    "@solana/web3.js": "^1.95.3",
     "clsx": "^2.1.0",
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
