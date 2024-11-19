@@ -63,7 +63,7 @@ export default function Home() {
           >
             I am a Passionate{" "}
             <span className="text-blue-400 text-extrabold">
-              <strong>Web</strong>
+              <strong>Web & App</strong>
             </span>{" "}
             Developer,{" "}
             <span className="text-blue-400 text-extrabold">
@@ -71,7 +71,7 @@ export default function Home() {
             </span>{" "}
             Contributor and{" "}
             <span className="text-blue-400 text-extrabold">
-              <strong>AI/ML + Blockchain</strong>
+              <strong>AI/ML & Blockchain</strong>
             </span>{" "}
             Enthusiast. My{" "}
             <span className="text-blue-400 text-extrabold">
